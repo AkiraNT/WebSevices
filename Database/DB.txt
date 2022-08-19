@@ -1,0 +1,22 @@
+create table TblAccounts (
+	Id int identity(1,1) primary key,
+	FullName nvarchar(250) not null default(''),
+	Email nvarchar(250) not null default(''),
+	Phone nvarchar(250) not null default(''),
+	Password nvarchar(250) not null default(''),
+	TotalPI decimal(18,2) not null default(0),
+	BalancePI decimal(18,5) not null default(0),
+	DepositPI decimal(18,5) not null default(0),
+)
+
+create table TblTransactions(
+	Id int identity(1,1) primary key,
+	AccountId int not null default(0),
+	Code varchar(50) not null default(''),
+	Qty decimal(18,5) not null default(0),
+	Rate decimal(18,2) not null default(0),
+	Amount decimal(18,2) not null default(0),
+	Type varchar(20) not null default(''),
+	Status varchar(50) not null default(''),
+	Date datetime not null default(getdate())
+)
