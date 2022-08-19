@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.1972
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SanpiNetwork", "SanpiNetwork\SanpiNetwork.csproj", "{67392B36-3D21-42BF-ABDE-D76454892185}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{67392B36-3D21-42BF-ABDE-D76454892185}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{67392B36-3D21-42BF-ABDE-D76454892185}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{67392B36-3D21-42BF-ABDE-D76454892185}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{67392B36-3D21-42BF-ABDE-D76454892185}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {50CEB2B7-043F-470F-BDC0-870F44D59D12}
+	EndGlobalSection
+EndGlobal

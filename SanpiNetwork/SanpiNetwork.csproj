@@ -1,0 +1,292 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{67392B36-3D21-42BF-ABDE-D76454892185}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SanpiNetwork</RootNamespace>
+    <AssemblyName>SanpiNetwork</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="SubSonic">
+      <HintPath>..\Libraries\SubSonic.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+    </Reference>
+    <Reference Include="AspNet.ScriptManager.bootstrap">
+      <HintPath>..\packages\AspNet.ScriptManager.bootstrap.3.3.7\lib\net45\AspNet.ScriptManager.bootstrap.dll</HintPath>
+    </Reference>
+    <Reference Include="AspNet.ScriptManager.jQuery">
+      <HintPath>..\packages\AspNet.ScriptManager.jQuery.3.3.1\lib\net45\AspNet.ScriptManager.jQuery.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ScriptManager.MSAjax">
+      <HintPath>..\packages\Microsoft.AspNet.ScriptManager.MSAjax.5.0.0\lib\net45\Microsoft.ScriptManager.MSAjax.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ScriptManager.WebForms">
+      <HintPath>..\packages\Microsoft.AspNet.ScriptManager.WebForms.5.0.0\lib\net45\Microsoft.ScriptManager.WebForms.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Optimization, Version=1.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
+      <HintPath>..\packages\Microsoft.AspNet.Web.Optimization.1.1.3\lib\net40\System.Web.Optimization.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\packages\Newtonsoft.Json.11.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="WebGrease">
+      <Private>True</Private>
+      <HintPath>..\packages\WebGrease.1.6.0\lib\WebGrease.dll</HintPath>
+    </Reference>
+    <Reference Include="Antlr3.Runtime">
+      <Private>True</Private>
+      <HintPath>..\packages\Antlr.3.5.0.2\lib\Antlr3.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.Web.Optimization.WebForms">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.Web.Optimization.WebForms.1.1.3\lib\net45\Microsoft.AspNet.Web.Optimization.WebForms.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.FriendlyUrls">
+      <HintPath>..\packages\Microsoft.AspNet.FriendlyUrls.Core.1.0.2\lib\net45\Microsoft.AspNet.FriendlyUrls.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\packages\Newtonsoft.Json.11.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http.Formatting">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Client.5.2.4\lib\net45\System.Net.Http.Formatting.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Http">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Core.5.2.4\lib\net45\System.Web.Http.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Http.WebHost">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.WebHost.5.2.4\lib\net45\System.Web.Http.WebHost.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="assets\css\c2c.css" />
+    <Content Include="assets\css\dashboard.css" />
+    <Content Include="assets\css\home.css" />
+    <Content Include="assets\css\vendor.css" />
+    <Content Include="assets\imgs\arrow-down.png" />
+    <Content Include="assets\imgs\arrow-up.png" />
+    <Content Include="assets\imgs\arrown_menu_accordion.png" />
+    <Content Include="assets\imgs\avatar.png" />
+    <Content Include="assets\imgs\back-to-top.html" />
+    <Content Include="assets\imgs\background-home.jpg" />
+    <Content Include="assets\imgs\bg_btn_dk_mbcd.png" />
+    <Content Include="assets\imgs\bg_ct.png" />
+    <Content Include="assets\imgs\bg_ct_b.png" />
+    <Content Include="assets\imgs\bg_ct_t.png" />
+    <Content Include="assets\imgs\bg_dn_dk.png" />
+    <Content Include="assets\imgs\bg_header.png" />
+    <Content Include="assets\imgs\bg_t_page.png" />
+    <Content Include="assets\imgs\bg_t_r2.png" />
+    <Content Include="assets\imgs\bg_t_tabs.png" />
+    <Content Include="assets\imgs\c2c.png" />
+    <Content Include="assets\imgs\copy.png" />
+    <Content Include="assets\imgs\icon-m-f2-ct.png" />
+    <Content Include="assets\imgs\icontag.png" />
+    <Content Include="assets\imgs\icon_1.png" />
+    <Content Include="assets\imgs\icon_10.png" />
+    <Content Include="assets\imgs\icon_11.png" />
+    <Content Include="assets\imgs\icon_12.png" />
+    <Content Include="assets\imgs\icon_13.png" />
+    <Content Include="assets\imgs\icon_14.png" />
+    <Content Include="assets\imgs\icon_15.png" />
+    <Content Include="assets\imgs\icon_16.png" />
+    <Content Include="assets\imgs\icon_17.png" />
+    <Content Include="assets\imgs\icon_18.png" />
+    <Content Include="assets\imgs\icon_19.png" />
+    <Content Include="assets\imgs\icon_1_0.png" />
+    <Content Include="assets\imgs\icon_2.png" />
+    <Content Include="assets\imgs\icon_20.png" />
+    <Content Include="assets\imgs\icon_21.png" />
+    <Content Include="assets\imgs\icon_2_0.png" />
+    <Content Include="assets\imgs\icon_5.png" />
+    <Content Include="assets\imgs\icon_6.png" />
+    <Content Include="assets\imgs\icon_7.png" />
+    <Content Include="assets\imgs\icon_8.png" />
+    <Content Include="assets\imgs\icon_9.png" />
+    <Content Include="assets\imgs\icon_lang_1.png" />
+    <Content Include="assets\imgs\icon_lang_2.png" />
+    <Content Include="assets\imgs\icon_lang_3.png" />
+    <Content Include="assets\imgs\lang_1.png" />
+    <Content Include="assets\imgs\lang_2.png" />
+    <Content Include="assets\imgs\lang_3.png" />
+    <Content Include="assets\imgs\line.png" />
+    <Content Include="assets\imgs\logo-pi.png" />
+    <Content Include="assets\imgs\logo-png.png" />
+    <Content Include="assets\imgs\logo.jpg" />
+    <Content Include="assets\imgs\logo.png" />
+    <Content Include="assets\imgs\menu_mobile.png" />
+    <Content Include="assets\imgs\my-wallet.jpg" />
+    <Content Include="assets\imgs\pi-trading.jpg" />
+    <Content Include="assets\imgs\tele.png" />
+    <Content Include="assets\imgs\web-small.svg" />
+    <Content Include="assets\js\flot\jquery.flot.categories.js" />
+    <Content Include="assets\js\flot\jquery.flot.js" />
+    <Content Include="assets\js\flot\jquery.flot.pie.js" />
+    <Content Include="assets\js\flot\jquery.flot.resize.js" />
+    <Content Include="assets\js\home.js" />
+    <Content Include="c2c.html" />
+    <Content Include="dang-ky.html" />
+    <Content Include="dashboard.html" />
+    <Content Include="favicon.ico" />
+    <Content Include="Global.asax" />
+    <Content Include="index.html" />
+    <Content Include="login.html" />
+    <Content Include="pi-trading.html" />
+    <Content Include="quen-pass.html" />
+    <Content Include="scripts\frame_script.js" />
+    <Content Include="scripts\frame_script.min.js" />
+    <Content Include="scripts\jquery-ui.js" />
+    <Content Include="scripts\jquery.js" />
+    <Content Include="tra-cuu-giao-dich.html" />
+    <Content Include="uploads\danhmuc\sanpi-11-png-20210330144746szVS2kNYZ7.png" />
+    <Content Include="uploads\danhmuc\sanpinetwork-dong-thuan-c2c-jpg-20220529093040QhmzXGXRwr.jpg" />
+    <Content Include="uploads\danhmuc\sanpinetwork-nguon-hang-2-png-202205290935581r3Cemjnt9.png" />
+    <Content Include="uploads\quangcao\br017-jpg-20211004214432EP4Uy7iCPt.jpg" />
+    <Content Include="uploads\quangcao\logo-sanpi-png-20220422222718IxAdeiHXMs.png" />
+    <Content Include="uploads\quangcao\logo-sanpi-png-20220422223004Q5Q29DCh5Z.png" />
+    <Content Include="uploads\quangcao\mb-bank-giua-5-png-20211003103109WT6bz5dNf9.png" />
+    <Content Include="uploads\quangcao\san-pi-hong-kong-3-jpg-20211004185555GQYX1zToiq.jpg" />
+    <Content Include="uploads\version\01-11-2021-sanpi-commodity-png-20211106190158MBItLvKteL.png" />
+    <Content Include="uploads\version\vip2-ico-20220620201932HnEkuVvgE.ico" />
+    <Content Include="Web.config" />
+    <Content Include="Bundle.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="App_Start\BundleConfig.cs" />
+    <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="App_Start\WebApiConfig.cs" />
+    <Compile Include="Commons\AccountsManager.cs" />
+    <Compile Include="Commons\TransactionsManager.cs" />
+    <Compile Include="Controllers\TransactionController.cs" />
+    <Compile Include="Controllers\RegisterController.cs" />
+    <Compile Include="Controllers\SignInController.cs" />
+    <Compile Include="DataAccess\AllStructs.cs" />
+    <Compile Include="DataAccess\StoredProcedures.cs" />
+    <Compile Include="DataAccess\TblAccount.cs" />
+    <Compile Include="DataAccess\TblAccountController.cs" />
+    <Compile Include="DataAccess\TblTransaction.cs" />
+    <Compile Include="DataAccess\TblTransactionController.cs" />
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Helpers\SecurityHelpers.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+    <Folder Include="Models\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="assets\css\c2c.css.map" />
+    <Content Include="assets\css\dashboard.css.map" />
+    <Content Include="assets\css\home.css.map" />
+    <Content Include="assets\css\vendor.css.map" />
+    <None Include="packages.config" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>56862</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:56862/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,1359 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:og="http://ogp.me/ns#" xmlns:fb="https://www.facebook.com/2008/fbml">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="google-site-verification" content="eX6ospXOUf-06fpY6JxzsZX3YJ3it6wltBxa-onTqI4" /><link rel="shortcut icon" href="uploads/version/vip2-ico-20220620201932HnEkuVvgE.ico" />
+<base href="https://sanpinetwork.com/" />
+<title>Sàn Pi Network - Chuyên mua bán, đồng thuận Pi phi tập trung</title>
+<meta name="description" content="Giá Pi mỗi ngày trên Sanpinetwork.com - Nơi chuyên mua bán, giao dịch Pi Coin, đồng thuận Pi Coin với các sản phẩm mới và cũ uy tín nhất hiện nay." />
+<meta name="keywords" content="chuyên mua bán pi,chuyen mua ban pi,pinetwork,pi network,sàn pi,san pi,sàn giao dịch pi,san giao dich pi,giá pi,gia pi,pi,Pi Coin,picoin,pi coin,mua bán pi,mua ban pi,bán pi,mua pi,ban pi,trao đổi pi,trao doi pi,giao dịch pi,giao dich pi,đồng thuận pi,don" />
+<meta property="og:title" content="Sàn Pi Network - Chuyên mua bán, đồng thuận Pi phi tập trung" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://sanpinetwork.com/imgs/layout/back-to-top.png" />
+<meta property="og:image" content="https://sanpinetwork.com/uploads/version/01-11-2021-sanpi-commodity-png-20211106190158MBItLvKteL.png" />
+<meta property="og:description" content="Giá Pi mỗi ngày trên Sanpinetwork.com - Nơi chuyên mua bán, giao dịch Pi Coin, đồng thuận Pi Coin với các sản phẩm mới và cũ uy tín nhất hiện nay." /><link rel="stylesheet" type="text/css" href="templates/css.css?id=1660467260">
+<script src="scripts/jquery.js"></script>
+<!--[if IE 6]>
+    <script src="scripts/DD_belatedPNG_0.0.8a.js"></script>
+    <script>DD_belatedPNG.fix('img, div, span, a, h1, h2, h3, h4, h5, h6, p, table, input');</script>
+<![endif]-->
+<!--[if lt IE 9]>
+	<script src="scripts/selectivizr-min.js"></script>
+    <script src="scripts/html5.js"></script>
+	<link rel="stylesheet" type="text/css" href="templates/FIX_IE.css" />
+<![endif]-->
+</head>
+<body>
+<div id="wrapper">
+<header id="header">
+<div class="min_wrap">
+<a class="logo" href="https://sanpinetwork.com">
+<img src="uploads/quangcao/logo-sanpi-png-20220422223004Q5Q29DCh5Z.png" alt="sanpi.link">
+</a>
+<ul class="ul_mn clearfix">
+<li class="active">
+<a class="sty_transition" href="https://sanpinetwork.com">_TRANG_CHU_</a>
+</li>
+<li>
+<a class="sty_transition" href="tra-cuu-giao-dich.htm">_TRA_CUU_GIAO_DICH_</a>
+</li>
+<li>
+<a class="sty_transition" href="tutorials.htm">
+Tutorials </a>
+</li>
+<li>
+<a class="sty_transition" href="nguon-hang.htm">
+Nguồn hàng </a>
+</li>
+<li>
+<a class="sty_transition" href="dong-thuan-c2c.htm">
+Đồng thuận C2C </a>
+</li>
+<li>
+<a class="sty_transition" href="tin-tuc.htm">
+Tin tức </a>
+</li>
+<li>
+<a class="sty_transition" href="huong-dan.htm">
+Hướng dẫn </a>
+</li>
+<li>
+<a class="sty_transition" href="lien-he.htm">_LIEN_HE_</a>
+</li>
+</ul>
+<ul class="ul_hea clearfix">
+<li>
+<a href="login.htm">
+<i class="icon_dn"></i>
+_DANG_NHAP_ <span id="btcusd777"></span>
+</a>
+ </li>
+<li>
+<a href="dang-ky.htm">
+<i class="icon_dk"></i>
+_DANG_KY_ </a>
+</li>
+<li class="li_lang">
+<ul class="ul_li_lang">
+<li>
+<a class="click_lang" href="JavaScript:void(0);" val="1">
+<img src="imgs/layout/lang_1.png" alt="_VIET_NAM_">
+_VIET_NAM_ </a>
+</li>
+<li>
+<a class="click_lang" href="JavaScript:void(0);" val="2">
+<img src="imgs/layout/lang_2.png" alt="_TIENG_ANH_">
+_TIENG_ANH_ </a>
+</li>
+<li>
+<a class="click_lang" href="JavaScript:void(0);" val="3">
+<img src="imgs/layout/lang_3.png" alt="_TIENG_TRUNG_">
+_TIENG_TRUNG_ </a>
+</li>
+</ul>
+</li>
+</ul>
+<script>
+			$(".click_lang").click(function() {
+				var val=$(this).attr("val");		
+				$.get("librarys/sec.php?kieu=1&giatri="+val,function(data){
+					 //location.reload();
+					 window.location.replace("https://sanpinetwork.com");
+				});
+			});
+		</script>
+<a class="icon_menu_mobile" href="javascript:void(0)" val="0" rel="nofollow"></a>
+</div>
+</header> <script>
+	$(document).ready(function() {
+        $(".btc").keyup(function() {
+        	var val=$(this).val();
+			var val_kieu=$(this).attr("val_kieu");
+			$.get("librarys/load_tygia.php?kieu=3&val="+val+"&val_kieu="+val_kieu,function(data) {
+			   $("#get_"+val_kieu).val(data);
+			});
+    	}); 
+					$("#tabs").tabs();
+				
+		/*setTimeout(function(){
+			$.get("librarys/load_tygia.php?kieu=5",function(data){$("#map_btc").text(data);});	
+		},4000);*/
+		
+		/*$("#tk_stk").keyup(function(e){
+			var tk_stk=$(this).val();
+			if(tk_stk!=''){
+				$(".load_card").html('<img src="imgs/loadcard.gif">');
+				var links_get='https://santienao.com/api/v1/bank_accounts/'+tk_stk;
+				//var links_get='https://muaAureus.net/api/v1/bank_accounts/'+tk_stk;
+				var urlss= "librarys/get_https.php?url="+links_get;           
+				$.get(urlss,function(data){
+					var account_name=data['account_name'];
+					var bank_name=data['bank_name'];
+					if(bank_name=='vcb'){
+						$("#tk_ten").val(account_name);
+						$("#tk_ten").attr("readonly","readonly");
+					}else{
+						$("#tk_ten").removeAttr("readonly");
+						$("#tk_ten").val("").attr("value","");
+					}
+					$(".load_card").html('');
+				});
+			}else{
+				$("#tk_ten").val('').attr("readonly","readonly");
+				$(".load_card").html('');
+			}
+		});
+		
+		$("#tk_stk").click(function(e){
+			var tk_stk=$(this).val();
+			if(tk_stk!=''){
+				$(".load_card").html('<img src="imgs/loadcard.gif">');
+				var links_get='https://santienao.com/api/v1/bank_accounts/'+tk_stk;
+				//var links_get='https://muaAureus.net/api/v1/bank_accounts/'+tk_stk;
+				var urlss= "librarys/get_https.php?url="+links_get;           
+				$.get(urlss,function(data){
+					var account_name=data['account_name'];
+					var bank_name=data['bank_name'];
+					if(bank_name=='vcb'){
+						$("#tk_ten").val(account_name);
+						$("#tk_ten").attr("readonly","readonly");
+					}else{
+						$("#tk_ten").removeAttr("readonly");
+						$("#tk_ten").val("").attr("value","");
+					}
+					$(".load_card").html('');
+				});
+			}else{
+				$("#tk_ten").val('').attr("readonly","readonly");
+				$(".load_card").html('');
+			}
+		});
+		
+		$(".send_authy").click(function() {
+			var val_name=$(this).attr("val_name");
+			$("#"+val_name).html('<img src="imgs/loadcard.gif" width="16" height="16"/>');
+			$.get("sms-authy.htm",function(data) {
+				if(data==1){$("#"+val_name).html('<span style="color:#FF0004">_SO_DT_BAN_NHAP_KO_DUNG_</span>');}
+				else if(data==2){$("#"+val_name).html('<span style="color:#FF0004">_BAN_CHUA_DANG_NHAP_</span>');}
+				else if(data==3){$("#"+val_name).html('<span style="color:#7DC403">_VUI_LONG_CHO_MA_AUTHY_DANG_GUI_DEN_DT_BAN_</span>');}
+				else{$("#"+val_name).html('<span style="color:#7DC403">_VUI_LONG_CHO_MA_AUTHY_DANG_GUI_DEN_DT_BAN_</span>');}
+			});
+		});	*/
+		
+		$("#click_btn_form1").click(function() {
+			$(this).html('<img src="imgs/loadcard.gif" width="16" height="16"/>');
+			setTimeout(function(){
+				$(this).attr('disabled','disabled');
+			},3000);
+		});	
+		
+		$("#click_btn_form2").click(function() {
+			$(this).html('<img src="imgs/loadcard.gif" width="16" height="16"/>');
+			setTimeout(function(){
+				$(this).attr('disabled','disabled');
+			},3000);
+		});	
+		
+    });
+</script>
+<link rel="stylesheet" type="text/css" href="scripts/swiper/dist/css/swiper.min.css">
+<script src="scripts/swiper/dist/js/swiper.min.js"></script>
+<style>
+	.tk_mau{ border:solid 1px #E88B1B !important; background:#FFC !important;}
+	.text_form_mbtm{ font-size:12px; width:150px;}
+	.ipt_form_mbtm{ font-size:15px;}
+	.tt_form_mbtm{ font-size:15px;}
+</style>
+<section id="container">
+<section class="row_1">
+<div class="text_row_1">
+<p class="t_row_1">_CHO_AUREUS_</p>
+<ul class="ul_row_1">
+<li>
+<p>_GIA_BAN_MUA_</p>
+<strong>
+12 576VNĐ </strong>
+</li>
+<li>
+<p>_GIA_BAN_BAN_</p>
+<strong>
+12 009VNĐ </strong>
+</li>
+</ul>
+<br>
+<div style="color:#FFF500; padding:0px 10px;">
+An toàn - Uy tín - Tiện lợi </div>
+</div>
+<div class="swiper-container swiper1">
+<div class="swiper-wrapper">
+<div class="swiper-slide">
+<a href="JavaScript:void(0);">
+<img class="swiper-lazy img_object_fit" data-src="uploads/quangcao/br017-jpg-20211004214432EP4Uy7iCPt.jpg" alt="SANPI" src="uploads/quangcao/br017-jpg-20211004214432EP4Uy7iCPt.jpg">
+<div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+</a>
+</div>
+<div class="swiper-slide">
+<a href="JavaScript:void(0);">
+<img class="swiper-lazy img_object_fit" data-src="uploads/quangcao/3-png-20211006211939lBSKCbCpxl.png" alt="" src="uploads/quangcao/3-png-20211006211939lBSKCbCpxl.png">
+<div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+</a>
+</div>
+<div class="swiper-slide">
+<a href="JavaScript:void(0);">
+<img class="swiper-lazy img_object_fit" data-src="uploads/quangcao/san-pi-hong-kong-3-jpg-20211004185555GQYX1zToiq.jpg" alt="SANPI" src="uploads/quangcao/san-pi-hong-kong-3-jpg-20211004185555GQYX1zToiq.jpg">
+<div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+</a>
+</div>
+<div class="swiper-slide">
+<a href="JavaScript:void(0);">
+<img class="swiper-lazy img_object_fit" data-src="uploads/quangcao/5-png-202110111929506FtV36gyHu.png" alt="" src="uploads/quangcao/5-png-202110111929506FtV36gyHu.png">
+<div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+</a>
+</div>
+<div class="swiper-slide">
+<a href="JavaScript:void(0);">
+<img class="swiper-lazy img_object_fit" data-src="uploads/quangcao/4-png-20211007202551zquuISUHp.png" alt="" src="uploads/quangcao/4-png-20211007202551zquuISUHp.png">
+<div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+</a>
+</div>
+<div class="swiper-slide">
+<a href="JavaScript:void(0);">
+<img class="swiper-lazy img_object_fit" data-src="uploads/quangcao/2-png-20211006211905R0b1dbbwVf.png" alt="" src="uploads/quangcao/2-png-20211006211905R0b1dbbwVf.png">
+<div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+</a>
+</div>
+</div>
+<div class="swiper-pagination swiper-pagination-white swiper-pagination1"></div>
+</div>
+</section>
+<section class="row_2">
+<div class="min_wrap">
+<ul class="ul_row_2 clearfix">
+<li>
+<div class="t_r2">_MUA_BAN_NHO_LE_TAI_TIEM_</div>
+<div class="tab_bb_bm">
+<div id="tabs">
+<ul class="t_tabs clearfix">
+<li><a href="#tabs-1">_BAN_BAN_AU_</a></li>
+<li><a href="#tabs-2">_BAN_MUA_AU_</a></li>
+</ul>
+<div id="tabs-1" class="m-tabs">
+<form method="post">
+<ul class="ul_form_mbtm">
+<li>
+<label class="text_form_mbtm">_CHUNG_TOI_CON_:</label>
+<div class="info_form_mbtm">
+<strong class="tt_form_mbtm">
+1 824 820 000 VNĐ </strong>
+</div>
+</li>
+<li>
+<label class="text_form_mbtm"><i class="star">*</i> _SO_AU_MUON_BAN_:</label>
+<div class="info_form_mbtm">
+<span class="ly_form_mbtm">Pi</span>
+<input style="padding-right: 40px;" class="ipt_form_mbtm box-sizing-fix btc" type="text" name="btc" value="" id="btc1" val_kieu="1" required>
+<div style="font-size:11px; color:#CBCBCB;">
+_TOI_THIEU_ 10 - _TOI_DA_ 100 </div>
+</div>
+</li>
+<li>
+<label class="text_form_mbtm">_SO_TIEN_SE_NHAN_:</label>
+<div class="info_form_mbtm">
+<span class="ly_form_mbtm">VNĐ</span>
+<input style="padding-right: 40px;" class="ipt_form_mbtm box-sizing-fix" type="text" readonly id="get_1" name="get_tientra" value="">
+</div>
+</li>
+<li>
+<label class="text_form_mbtm"><i class="star">*</i> _MA_AU_XAC_THUC_: </label>
+<div class="info_form_mbtm">
+<input class="ipt_form_mbtm box-sizing-fix" type="text" name="authy" value="" required>
+
+<div style="color:#353535; font-size:12px; margin-top:5px;">
+App Google Authy for <a style="color:#003DAA; text-decoration:underline;" target="_blank" href="https://play.google.com/store/apps/details?id=com.google.android.apps.authenticator2&hl=vi&gl=US">Adroid</a> or <a style="color:#003DAA; text-decoration:underline;" target="_blank" href="https://apps.apple.com/vn/app/google-authenticator/id388497605?l=vi">iOS</a>
+</div>
+<div id="data_cho_ban" style="font-size:12px;"></div>
+</div>
+</li>
+<li>
+<label class="text_form_mbtm">
+<i class="star">*</i> _SO_TK_VCB_:
+</label>
+<div class="info_form_mbtm">
+<input readonly class="ipt_form_mbtm box-sizing-fix" id="tk_stk" type="text" name="tk_stk" value="" autocomplete="off" required>
+</div>
+</li>
+<li>
+<label class="text_form_mbtm">
+<i class="star">*</i> _TEN_CHU_TK_VCB_: <span class="load_card"></span>
+</label>
+<div class="info_form_mbtm">
+<input readonly class="ipt_form_mbtm box-sizing-fix" id="tk_ten" type="text" name="tk_ten" value="" required>
+</div>
+</li>
+<li>
+<label class="text_form_mbtm">
+<i class="star">*</i> _NGAN_HANH_CHI_NHANH_: <span class="load_card"></span>
+</label>
+<div class="info_form_mbtm">
+<input readonly class="ipt_form_mbtm box-sizing-fix" id="tk_nganhang" type="text" name="tk_nganhang" value="" required>
+</div>
+</li>
+<li>
+<label class="text_form_mbtm"><i class="star">*</i> _DIA_CHI_VI_ (Pi):</label>
+<div class="info_form_mbtm">
+<input readonly class="ipt_form_mbtm box-sizing-fix" type="text" name="tk_btc" value="" required>
+</div>
+</li>
+
+<li>
+<button id="click_btn_form1" class="btn_form_mbtm" type="submit" name="gui1">
+_TIEP_TUC_ </button>
+</li>
+</ul>
+</form>
+</div>
+<div id="tabs-2" class="m-tabs">
+<form method="post">
+<ul class="ul_form_mbtm">
+<li>
+<label class="text_form_mbtm">_CHUNG_TOI_CON_:</label>
+<div class="info_form_mbtm">
+<strong class="tt_form_mbtm">
+8 000 Pi </strong>
+</div>
+</li>
+<li>
+<label class="text_form_mbtm"><i class="star">*</i> _SO_AU_MUON_MUA_:</label>
+<div class="info_form_mbtm">
+<span class="ly_form_mbtm">Pi</span>
+<input style="padding-right: 40px;" class="ipt_form_mbtm box-sizing-fix btc" type="text" name="btc2" value="" id="btc2" val_kieu="2" required>
+<div style="font-size:11px; color:#CBCBCB;">
+_TOI_THIEU_ 400 - _TOI_DA_ 4000 </div>
+</div>
+</li>
+<li>
+<label class="text_form_mbtm">_SO_TIEN_SE_TRA_:</label>
+<div class="info_form_mbtm">
+<span class="ly_form_mbtm">VNĐ</span>
+<input style="padding-right: 40px;" class="ipt_form_mbtm box-sizing-fix" type="text" readonly id="get_2" name="get_tientra2" value="">
+</div>
+</li>
+<li>
+<label class="text_form_mbtm"><i class="star">*</i> _MA_AU_XAC_THUC_: </label>
+<div class="info_form_mbtm">
+<input class="ipt_form_mbtm box-sizing-fix" type="text" name="authy2" value="" required>
+
+<div style="color:#353535; font-size:12px; margin-top:5px;">
+App Google Authy for <a style="color:#003DAA; text-decoration:underline;" target="_blank" href="https://play.google.com/store/apps/details?id=com.google.android.apps.authenticator2&hl=vi&gl=US">Adroid</a> or <a style="color:#003DAA; text-decoration:underline;" target="_blank" href="https://apps.apple.com/vn/app/google-authenticator/id388497605?l=vi">iOS</a>
+</div>
+<div id="data_cho_mua" style=" font-size:12px;"></div>
+</div>
+</li>
+
+<li>
+<label class="text_form_mbtm">
+<i class="star">*</i> _SO_TK_VCB_:
+</label>
+<div class="info_form_mbtm">
+<input readonly class="ipt_form_mbtm box-sizing-fix" id="tk_stk" type="text" name="tk_stk2" value="" autocomplete="off" required>
+</div>
+</li>
+<li>
+ <label class="text_form_mbtm">
+<i class="star">*</i> _TEN_CHU_TK_VCB_: <span class="load_card"></span>
+</label>
+<div class="info_form_mbtm">
+<input readonly class="ipt_form_mbtm box-sizing-fix" id="tk_ten" type="text" name="tk_ten2" value="" required>
+</div>
+</li>
+<li>
+<label class="text_form_mbtm">
+<i class="star">*</i> _NGAN_HANH_CHI_NHANH_: <span class="load_card"></span>
+</label>
+<div class="info_form_mbtm">
+<input readonly class="ipt_form_mbtm box-sizing-fix" id="tk_nganhang" type="text" name="tk_nganhang2" value="" required>
+</div>
+</li>
+<li>
+<label class="text_form_mbtm"><i class="star">*</i> _DIA_CHI_VI_ (Pi):</label>
+<div class="info_form_mbtm">
+<input readonly class="ipt_form_mbtm box-sizing-fix" type="text" name="tk_btc" value="" required>
+</div>
+</li>
+
+<li>
+<button id="click_btn_form2" class="btn_form_mbtm" type="submit" name="gui2">
+_TIEP_TUC_ </button>
+</li>
+</ul>
+</form>
+</div>
+</div>
+<script src="scripts/jquery-ui.js"></script>
+</div>
+<div class="show_text f-detail clearfix">
+<div style="text-align:justify"><span style="color:#ff0000"><em><span style="font-size:14px"><strong><u>Lưu ý:</u> </strong></span></em></span><br />
+<span style="color:#3399ff">1) KYC Level 0 đến Level 2 bạn chỉ được giao dịch tối đa 1 lần trong ngày (nếu spam, hệ thống sẽ khóa tài khoản của bạn), từ Level 3 trở lên bạn được giao dịch trong biên độ (Tối đa - Tối thiểu).<br />
+2) Không được liên tục spam đăng ký mua/bán Pi tại tiệm, tạo lệnh Nạp Point (kích nạp point nhưng không chuyển tiền hoặc Pi) thì tài khoản của bạn sẽ bị hệ thống khóa, tất cả các giao dịch của bạn sẽ bị treo lại.<br />
+3) Để giao dịch số lượng lớn, chúng tôi khuyên bạn nên giao dịch bên Chợ cộng đồng P2P.<br />
+4) Giao dịch liên ngân hàng sẽ chậm hơn giao dịch nội bộ và không được hỗ trợ thứ bảy, chủ nhật, lễ tết.<br />
+5) Tất cả giao dịch mua và bán tại Tiệm được hoàn thành tối đa trong 8 giờ làm việc.</span><br />
+ </div>
+</div>
+</li>
+<li>
+
+
+
+<div class="show_iframe">
+<ul class="ul_adv_h">
+<li>
+<a href="https://mobile.mbbank.com.vn/referral/referred.html?referral_code=UWUYD...YGZ4P5XU" title="MB bank 1">
+<img src="uploads/quangcao/mb-bank-giua-5-png-20211003103109WT6bz5dNf9.png" alt="MB bank 1">
+</a>
+</li>
+</ul>
+</div>
+<div class="show_iframe">
+<iframe width="100%" height="200" src="https://www.youtube.com/embed/kfkhFBGUfcY?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+</div>
+
+</li>
+<li>
+<div class="t_r2">_CHO_CONG_DONG_AU_</div>
+<div class="bg_mbcd"></div>
+<div class="f_mbcd">
+<div class="m_mbcd clearfix" id="load_congdong">
+<div class="dsm_mbcd">
+<div class="t_mbcd">_DS_MUA_</div>
+<ul class="ul_mbcd">
+<li>
+<a class="click_ds_h dkbtc" href="JavaScript:void(0);"></a>
+<div class="l_mbcd">1.</div>
+<div class="r_mbcd">
+<p class="name_mbcd">
+Zidane Senadan </p>
+<ol class="ol_mbcd">
+<li>
+_MUA_TOI_DA_ <span>
+400 Pi </span>
+</li>
+<li>
+_MUA_TOI_THIEU_ <span>
+400 Pi </span>
+</li>
+</ol>
+<p class="tg_mbcd">
+_TY_GIA_ <span>
+12 900VNĐ </span>
+</p>
+</div>
+<a class="btn_mbcd dkbtc" href="JavaScript:void(0);">_BAN_</a>
+</li>
+<li>
+<a class="click_ds_h dkbtc" href="JavaScript:void(0);"></a>
+<div class="l_mbcd">2.</div>
+<div class="r_mbcd">
+<p class="name_mbcd">
+朱 基 民 (Chu Kiệm Minh) </p>
+<ol class="ol_mbcd">
+<li>
+_MUA_TOI_DA_ <span>
+2 000 Pi </span>
+</li>
+<li>
+_MUA_TOI_THIEU_ <span>
+500 Pi </span>
+</li>
+</ol>
+<p class="tg_mbcd">
+_TY_GIA_ <span>
+10 200VNĐ </span>
+</p>
+</div>
+ <a class="btn_mbcd dkbtc" href="JavaScript:void(0);">_BAN_</a>
+</li>
+<li>
+<a class="click_ds_h dkbtc" href="JavaScript:void(0);"></a>
+<div class="l_mbcd">3.</div>
+<div class="r_mbcd">
+<p class="name_mbcd">
+琅 勃 翁 </p>
+<ol class="ol_mbcd">
+<li>
+_MUA_TOI_DA_ <span>
+200 Pi </span>
+</li>
+<li>
+_MUA_TOI_THIEU_ <span>
+100 Pi </span>
+</li>
+</ol>
+<p class="tg_mbcd">
+_TY_GIA_ <span>
+9 500VNĐ </span>
+</p>
+</div>
+<a class="btn_mbcd dkbtc" href="JavaScript:void(0);">_BAN_</a>
+</li>
+<li>
+<a class="click_ds_h dkbtc" href="JavaScript:void(0);"></a>
+<div class="l_mbcd">4.</div>
+<div class="r_mbcd">
+<p class="name_mbcd">
+นกกาเหว่า (Chim Cu) </p>
+<ol class="ol_mbcd">
+<li>
+_MUA_TOI_DA_ <span>
+800 Pi </span>
+</li>
+<li>
+_MUA_TOI_THIEU_ <span>
+500 Pi </span>
+</li>
+</ol>
+<p class="tg_mbcd">
+_TY_GIA_ <span>
+8 500VNĐ </span>
+</p>
+</div>
+<a class="btn_mbcd dkbtc" href="JavaScript:void(0);">_BAN_</a>
+ </li>
+<li>
+<a class="click_ds_h dkbtc" href="JavaScript:void(0);"></a>
+<div class="l_mbcd">5.</div>
+<div class="r_mbcd">
+<p class="name_mbcd">
+吕 昆 史 密 斯 (Lý Cường Thịnh) </p>
+<ol class="ol_mbcd">
+<li>
+_MUA_TOI_DA_ <span>
+500 Pi </span>
+</li>
+<li>
+_MUA_TOI_THIEU_ <span>
+350 Pi </span>
+</li>
+</ol>
+<p class="tg_mbcd">
+_TY_GIA_ <span>
+7 500VNĐ </span>
+</p>
+</div>
+<a class="btn_mbcd dkbtc" href="JavaScript:void(0);">_BAN_</a>
+</li>
+<li>
+<a class="click_ds_h dkbtc" href="JavaScript:void(0);"></a>
+<div class="l_mbcd">6.</div>
+<div class="r_mbcd">
+<p class="name_mbcd">
+曹 潭 台 (Cao Tấn Tài) </p>
+<ol class="ol_mbcd">
+<li>
+_MUA_TOI_DA_ <span>
+500 Pi </span>
+</li>
+<li>
+_MUA_TOI_THIEU_ <span>
+400 Pi </span>
+</li>
+</ol>
+<p class="tg_mbcd">
+_TY_GIA_ <span>
+7 000VNĐ </span>
+</p>
+</div>
+<a class="btn_mbcd dkbtc" href="JavaScript:void(0);">_BAN_</a>
+</li>
+</ul>
+<a class="bt_ds_muaban" href="danh-sach-mua.htm">_XEM_THEM_DS_MUA_</a>
+<a class="btn_dk_mbcd dkbtc" href="JavaScript:void(0);">_DANG_KY_MUA_</a>
+</div>
+<div class="dsb_mbcd">
+<div class="t_mbcd">_DS_BAN_</div>
+<ul class="ul_mbcd">
+<li>
+<a class="click_ds_h dkbtc" href="JavaScript:void(0);"></a>
+<div class="l_mbcd">1.</div>
+<div class="r_mbcd">
+<p class="name_mbcd">
+Linhbd </p>
+<ol class="ol_mbcd">
+<li>
+_BAN_TOI_DA_ <span>
+200 Pi </span>
+</li>
+<li>
+_BAN_TOI_THIEU_ <span>
+100 Pi </span>
+</li>
+</ol>
+<p class="tg_mbcd">
+_TY_GIA_ <span>
+17 000VNĐ </span>
+</p>
+</div>
+<a class="btn_mbcd dkbtc" href="JavaScript:void(0);">_MUA_</a>
+</li>
+<li>
+<a class="click_ds_h dkbtc" href="JavaScript:void(0);"></a>
+<div class="l_mbcd">2.</div>
+<div class="r_mbcd">
+<p class="name_mbcd">
+サトシ (shatoshi) </p>
+<ol class="ol_mbcd">
+<li>
+_BAN_TOI_DA_ <span>
+500 Pi </span>
+</li>
+<li>
+_BAN_TOI_THIEU_ <span>
+50 Pi </span>
+</li>
+</ol>
+<p class="tg_mbcd">
+_TY_GIA_ <span>
+18 000VNĐ </span>
+</p>
+</div>
+ <a class="btn_mbcd dkbtc" href="JavaScript:void(0);">_MUA_</a>
+</li>
+<li>
+<a class="click_ds_h dkbtc" href="JavaScript:void(0);"></a>
+<div class="l_mbcd">3.</div>
+<div class="r_mbcd">
+<p class="name_mbcd">
+朱 基 民 (Chu Kiệm Minh) </p>
+<ol class="ol_mbcd">
+<li>
+_BAN_TOI_DA_ <span>
+2 000 Pi </span>
+</li>
+<li>
+_BAN_TOI_THIEU_ <span>
+2 000 Pi </span>
+</li>
+</ol>
+<p class="tg_mbcd">
+_TY_GIA_ <span>
+18 500VNĐ </span>
+</p>
+</div>
+<a class="btn_mbcd dkbtc" href="JavaScript:void(0);">_MUA_</a>
+</li>
+<li>
+<a class="click_ds_h dkbtc" href="JavaScript:void(0);"></a>
+<div class="l_mbcd">4.</div>
+<div class="r_mbcd">
+<p class="name_mbcd">
+Zidane Senadan </p>
+<ol class="ol_mbcd">
+<li>
+_BAN_TOI_DA_ <span>
+1 000 Pi </span>
+</li>
+<li>
+_BAN_TOI_THIEU_ <span>
+1 000 Pi </span>
+</li>
+</ol>
+<p class="tg_mbcd">
+_TY_GIA_ <span>
+19 800VNĐ </span>
+</p>
+</div>
+<a class="btn_mbcd dkbtc" href="JavaScript:void(0);">_MUA_</a>
+</li>
+ <li>
+<a class="click_ds_h dkbtc" href="JavaScript:void(0);"></a>
+<div class="l_mbcd">5.</div>
+<div class="r_mbcd">
+<p class="name_mbcd">
+琅 勃 翁 </p>
+<ol class="ol_mbcd">
+<li>
+_BAN_TOI_DA_ <span>
+5 000 Pi </span>
+</li>
+<li>
+_BAN_TOI_THIEU_ <span>
+1 000 Pi </span>
+</li>
+</ol>
+<p class="tg_mbcd">
+_TY_GIA_ <span>
+20 100VNĐ </span>
+</p>
+</div>
+<a class="btn_mbcd dkbtc" href="JavaScript:void(0);">_MUA_</a>
+</li>
+<li>
+<a class="click_ds_h dkbtc" href="JavaScript:void(0);"></a>
+<div class="l_mbcd">6.</div>
+<div class="r_mbcd">
+<p class="name_mbcd">
+曹 潭 台 (Cao Tấn Tài) </p>
+<ol class="ol_mbcd">
+<li>
+_BAN_TOI_DA_ <span>
+2 155 Pi </span>
+</li>
+<li>
+_BAN_TOI_THIEU_ <span>
+1 000 Pi </span>
+</li>
+</ol>
+<p class="tg_mbcd">
+_TY_GIA_ <span>
+21 000VNĐ </span>
+</p>
+</div>
+<a class="btn_mbcd dkbtc" href="JavaScript:void(0);">_MUA_</a>
+</li>
+</ul>
+<a class="bt_ds_muaban" href="danh-sach-ban.htm">_XEM_THEM_DS_BAN_</a>
+<a class="btn_dk_mbcd dkbtc" href="JavaScript:void(0);">_DANG_KY_BAN_</a>
+</div>
+</div>
+</div>
+<div class="show_text f-detail clearfix">
+<div style="text-align:justify"><em><span style="font-size:14px"><span style="color:#ff0000"><u><strong>Lưu ý:</strong></u></span></span></em><br />
+<span style="color:#3399ff">1) Phí đăng tin là 0.5% trung bình cộng của tổng số tiền mua bán (tối đa + tối thiểu);<br />
+2) Chúng tôi sẽ hoàn lại phí Point đăng tin cho bạn nếu không có ai giao dịch với tin đăng của bạn trong vòng 24 giờ;<br />
+3) Tạo lệnh nạp point mà không giao dịch, hệ thống sẽ đánh dấu spam tài khoản bạn;<br />
+4) Người tạo tin đăng mua/bán phải bật thông báo chuông cho email, telegram để biết có người giao dịch. Bạn có nhiều lần giao dịch không thành công vì quá hạn chờ mà lỗi do bạn, tài khoản sẽ mất uy tín và bị hệ thống đánh dấu spam. <br />
+5) Tất cả mọi giao dịch mua và bán tại chợ Cộng đồng P2P đều hoàn thành tối đa trong 48 giờ.</span><br />
+ </div>
+</div>
+</li>
+</ul>
+</div>
+</section>
+<section class="row_3">
+<div class="min_wrap">
+<div class="swiper-container swiper2">
+<div class="swiper-wrapper">
+</div>
+</div>
+</div>
+</section>
+</section> <footer id="footer">
+<div class="min_wrap">
+<ul class="ul_foot_1">
+</ul>
+
+</div>
+</footer> </div>
+
+<script>$(document).ready(function(){$(window).load(function(){setTimeout(function(){$.get('librarys/load_tygia.php?kieu=2');},3000);});});</script>
+<script>$(document).ready(function(){$(window).load(function(){setTimeout(function(){$.get('librarys/xuly_count.php?ko_dem=1');},3000);});});</script>
+<script>$(document).ready(function(){$(window).load(function(){setTimeout(function(){$.get('librarys/sec.php?kieu=3');},3000);});});</script>
+<div class="menu_mobile" style="visibility: hidden;">
+<span class="close_menu_mobile"></span>
+<div class="menu_accordion">
+<ul class="ul_ma_1">
+<li class="active">
+<a href="https://sanpinetwork.com">_TRANG_CHU_</a>
+</li>
+<li>
+<a href="tra-cuu-giao-dich.htm">_TRA_CUU_GIAO_DICH_</a>
+</li>
+<li>
+<a href="tutorials.htm">Tutorials</a>
+</li>
+<li>
+<a href="tin-tuc.htm">Tin tức</a>
+</li>
+<li>
+<a href="huong-dan.htm">Hướng dẫn</a>
+</li>
+<li>
+<a href="danh-sach-mua.htm">Danh sách mua</a>
+</li>
+<li>
+<a href="danh-sach-ban.htm">Danh sách bán</a>
+</li>
+<li>
+<a href="nguon-hang.htm">Nguồn hàng</a>
+<i class="arrown_menu_accordion" val="sub_ac_258"></i>
+<ul class="ul_ma_2" id="sub_ac_258" style="display:none;">
+<li>
+<a href="nguon-hang/1-sanpi-house.htm">1. Sanpi House (1)</a>
+</li>
+<li>
+<a href="nguon-hang/2-sanpi-vehicle.htm">2. Sanpi Vehicle (4)</a>
+<i class="arrown_menu_accordion" val="sub_ac_258_260"></i>
+<ul class="ul_ma_3" id="sub_ac_258_260" style="display:none;">
+<li>
+<a href="nguon-hang/2-sanpi-vehicle/xe-o-to.htm">Xe Ô tô (3)</a>
+</li>
+<li>
+<a href="nguon-hang/2-sanpi-vehicle/xe-mo-to-xe-dap.htm">Xe mô tô - xe đạp (1)</a>
+</li>
+<li>
+<a href="nguon-hang/2-sanpi-vehicle/phu-kien-do-choi.htm">Phụ kiện - Đồ chơi (0)</a>
+</li>
+</ul>
+</li>
+<li>
+<a href="nguon-hang/3-sanpi-electronic.htm">3. Sanpi Electronic (1)</a>
+<i class="arrown_menu_accordion" val="sub_ac_258_261"></i>
+<ul class="ul_ma_3" id="sub_ac_258_261" style="display:none;">
+<li>
+<a href="nguon-hang/3-sanpi-electronic/smarphone.htm">Smarphone (0)</a>
+</li>
+<li>
+<a href="nguon-hang/3-sanpi-electronic/may-tinh-laptop.htm">Máy tính, Laptop (1)</a>
+</li>
+<li>
+<a href="nguon-hang/3-sanpi-electronic/phu-kien-khac.htm">Phụ kiện khác (0)</a>
+</li>
+</ul>
+</li>
+<li>
+<a href="nguon-hang/4-sanpi-foods.htm">4. Sanpi Foods (1)</a>
+<i class="arrown_menu_accordion" val="sub_ac_258_262"></i>
+<ul class="ul_ma_3" id="sub_ac_258_262" style="display:none;">
+<li>
+<a href="nguon-hang/4-sanpi-foods/do-an-uong-hang-ngay.htm">Đồ ăn uống hàng ngày (0)</a>
+</li>
+<li>
+<a href="nguon-hang/4-sanpi-foods/dac-san-vung-mien.htm">Đặc sản vùng miền (1)</a>
+</li>
+</ul>
+</li>
+<li>
+<a href="nguon-hang/5-sanpi-sport.htm">5. Sanpi Sport (1)</a>
+</li>
+<li>
+<a href="nguon-hang/6-sanpi-mom-baby.htm">6. Sanpi Mom & Baby (1)</a>
+<i class="arrown_menu_accordion" val="sub_ac_258_264"></i>
+<ul class="ul_ma_3" id="sub_ac_258_264" style="display:none;">
+<li>
+<a href="nguon-hang/6-sanpi-mom-baby/do-choi-tre-em.htm">Đồ chơi trẻ em (0)</a>
+</li>
+<li>
+<a href="nguon-hang/6-sanpi-mom-baby/do-dung-em-be.htm">Đồ dùng em bé (1)</a>
+</li>
+</ul>
+</li>
+<li>
+<a href="nguon-hang/7-sanpi-travel.htm">7. Sanpi Travel (1)</a>
+<i class="arrown_menu_accordion" val="sub_ac_258_265"></i>
+<ul class="ul_ma_3" id="sub_ac_258_265" style="display:none;">
+<li>
+<a href="nguon-hang/7-sanpi-travel/do-du-lich.htm">Đồ Du lịch (0)</a>
+</li>
+<li>
+<a href="nguon-hang/7-sanpi-travel/quan-xa.htm">Quán xá (0)</a>
+</li>
+<li>
+<a href="nguon-hang/7-sanpi-travel/luu-tru.htm">Lưu trú (0)</a>
+</li>
+<li>
+<a href="nguon-hang/7-sanpi-travel/book-tour.htm">Book Tour (0)</a>
+</li>
+<li>
+<a href="nguon-hang/7-sanpi-travel/spa-giai-tri-khac.htm">Spa & giải trí khác (1)</a>
+</li>
+</ul>
+</li>
+<li>
+<a href="nguon-hang/8-sanpi-health.htm">8. Sanpi Health (1)</a>
+<i class="arrown_menu_accordion" val="sub_ac_258_266"></i>
+<ul class="ul_ma_3" id="sub_ac_258_266" style="display:none;">
+<li>
+<a href="nguon-hang/8-sanpi-health/thiet-bi-tro-giup.htm">Thiết bị trợ giúp (1)</a>
+</li>
+<li>
+<a href="nguon-hang/8-sanpi-health/lieu-phap-dac-tri.htm">Liệu pháp đặc trị (0)</a>
+</li>
+</ul>
+</li>
+<li>
+<a href="nguon-hang/9-sanpi-beautify.htm">9. Sanpi Beautify (1)</a>
+<i class="arrown_menu_accordion" val="sub_ac_258_267"></i>
+<ul class="ul_ma_3" id="sub_ac_258_267" style="display:none;">
+<li>
+<a href="nguon-hang/9-sanpi-beautify/thiet-bi-lam-dep.htm">Thiết bị làm đẹp (0)</a>
+</li>
+<li>
+<a href="nguon-hang/9-sanpi-beautify/my-pham-lam-dep.htm">Mỹ phẩm làm đẹp (1)</a>
+</li>
+</ul>
+</li>
+<li>
+<a href="nguon-hang/10-sanpi-appliances.htm">10. Sanpi Appliances (1)</a>
+<i class="arrown_menu_accordion" val="sub_ac_258_268"></i>
+<ul class="ul_ma_3" id="sub_ac_258_268" style="display:none;">
+<li>
+<a href="nguon-hang/10-sanpi-appliances/phong-khach.htm">Phòng khách (1)</a>
+</li>
+<li>
+ <a href="nguon-hang/10-sanpi-appliances/phong-bep.htm">Phòng bếp (0)</a>
+</li>
+<li>
+<a href="nguon-hang/10-sanpi-appliances/phong-ngu.htm">Phòng ngủ (0)</a>
+</li>
+<li>
+<a href="nguon-hang/10-sanpi-appliances/phong-lam-viec.htm">Phòng làm việc (0)</a>
+</li>
+<li>
+<a href="nguon-hang/10-sanpi-appliances/phong-tam.htm">Phòng tắm (0)</a>
+</li>
+<li>
+<a href="nguon-hang/10-sanpi-appliances/san-vuon-ban-cong.htm">Sân vườn, Ban công (0)</a>
+</li>
+</ul>
+</li>
+<li>
+<a href="nguon-hang/11-sanpi-smart-home.htm">11. Sanpi Smart Home (0)</a>
+</li>
+<li>
+<a href="nguon-hang/12-sanpi-personal.htm">12. Sanpi Personal (0)</a>
+<i class="arrown_menu_accordion" val="sub_ac_258_270"></i>
+<ul class="ul_ma_3" id="sub_ac_258_270" style="display:none;">
+<li>
+<a href="nguon-hang/12-sanpi-personal/do-ca-nhan-nam.htm">Đồ cá nhân Nam (0)</a>
+</li>
+<li>
+<a href="nguon-hang/12-sanpi-personal/do-ca-nhan-nu.htm">Đồ cá nhân Nữ (0)</a>
+</li>
+</ul>
+</li>
+<li>
+<a href="nguon-hang/13-sanpi-stationery.htm">13. Sanpi Stationery (0)</a>
+<i class="arrown_menu_accordion" val="sub_ac_258_271"></i>
+<ul class="ul_ma_3" id="sub_ac_258_271" style="display:none;">
+<li>
+<a href="nguon-hang/13-sanpi-stationery/but-ky.htm">Bút ký (0)</a>
+</li>
+<li>
+<a href="nguon-hang/13-sanpi-stationery/camera-nghiep-vu.htm">Camera nghiệp vụ (0)</a>
+</li>
+<li>
+<a href="nguon-hang/13-sanpi-stationery/balo-laptop.htm">Balo Laptop (0)</a>
+</li>
+<li>
+<a href="nguon-hang/13-sanpi-stationery/lich-thiep-bao-li-xi.htm">Lịch, thiệp, bao lì xì (0)</a>
+</li>
+<li>
+<a href="nguon-hang/13-sanpi-stationery/cac-loai-khac.htm">Các loại khác (0)</a>
+</li>
+</ul>
+</li>
+<li>
+<a href="nguon-hang/14-sanpi-construct.htm">14. Sanpi Construct (0)</a>
+<i class="arrown_menu_accordion" val="sub_ac_258_272"></i>
+<ul class="ul_ma_3" id="sub_ac_258_272" style="display:none;">
+<li>
+ <a href="nguon-hang/14-sanpi-construct/dan-dung.htm">Dân dụng (0)</a>
+</li>
+<li>
+<a href="nguon-hang/14-sanpi-construct/cau-duong.htm">Cầu đường (0)</a>
+</li>
+<li>
+<a href="nguon-hang/14-sanpi-construct/vat-lieu-cong-nghe-moi.htm">Vật liệu - Công nghệ mới (0)</a>
+</li>
+</ul>
+</li>
+<li>
+<a href="nguon-hang/15-sanpi-fashion.htm">15. Sanpi Fashion (1)</a>
+<i class="arrown_menu_accordion" val="sub_ac_258_273"></i>
+<ul class="ul_ma_3" id="sub_ac_258_273" style="display:none;">
+<li>
+<a href="nguon-hang/15-sanpi-fashion/quan-ao-nam.htm">Quần áo Nam (0)</a>
+</li>
+<li>
+<a href="nguon-hang/15-sanpi-fashion/quan-ao-nu.htm">Quần áo Nữ (0)</a>
+</li>
+<li>
+<a href="nguon-hang/15-sanpi-fashion/dong-ho.htm">Đồng hồ (0)</a>
+</li>
+<li>
+<a href="nguon-hang/15-sanpi-fashion/mat-kinh.htm">Mắt kính (0)</a>
+</li>
+<li>
+<a href="nguon-hang/15-sanpi-fashion/giay-dep-nam.htm">Giày dép Nam (0)</a>
+</li>
+<li>
+<a href="nguon-hang/15-sanpi-fashion/giay-dep-nu.htm">Giày dép Nữ (0)</a>
+</li>
+<li>
+<a href="nguon-hang/15-sanpi-fashion/trang-suc.htm">Trang sức (0)</a>
+</li>
+<li>
+<a href="nguon-hang/15-sanpi-fashion/tui-xach.htm">Túi xách (1)</a>
+</li>
+<li>
+<a href="nguon-hang/15-sanpi-fashion/that-lung.htm">Thắt lưng (0)</a>
+</li>
+<li>
+<a href="nguon-hang/15-sanpi-fashion/mu-non.htm">Mũ nón (0)</a>
+</li>
+</ul>
+</li>
+<li>
+<a href="nguon-hang/16-sanpi-garden.htm">16. Sanpi Garden (0)</a>
+<i class="arrown_menu_accordion" val="sub_ac_258_274"></i>
+<ul class="ul_ma_3" id="sub_ac_258_274" style="display:none;">
+<li>
+<a href="nguon-hang/16-sanpi-garden/hat-giong.htm">Hạt giống (0)</a>
+</li>
+<li>
+<a href="nguon-hang/16-sanpi-garden/thiet-bi-do-nghe.htm">Thiết bị, đồ nghề (0)</a>
+</li>
+</ul>
+</li>
+</ul>
+ </li>
+<li>
+<a href="dong-thuan-c2c.htm">Đồng thuận C2C</a>
+<i class="arrown_menu_accordion" val="sub_ac_33"></i>
+<ul class="ul_ma_2" id="sub_ac_33" style="display:none;">
+<li>
+<a href="dong-thuan-c2c/1-bat-dong-san.htm">1. Bất động sản (0)</a>
+<i class="arrown_menu_accordion" val="sub_ac_33_49"></i>
+<ul class="ul_ma_3" id="sub_ac_33_49" style="display:none;">
+<li>
+<a href="dong-thuan-c2c/1-bat-dong-san/condotel.htm">- Condotel (0)</a>
+</li>
+<li>
+<a href="dong-thuan-c2c/1-bat-dong-san/nha-pho.htm">- Nhà phố (0)</a>
+</li>
+<li>
+<a href="dong-thuan-c2c/1-bat-dong-san/dat-nen.htm">- Đất nền (0)</a>
+</li>
+<li>
+<a href="dong-thuan-c2c/1-bat-dong-san/dat-vuon.htm">- Đất vườn (0)</a>
+</li>
+<li>
+<a href="dong-thuan-c2c/1-bat-dong-san/nha-tro.htm">- Nhà trọ (0)</a>
+</li>
+<li>
+<a href="dong-thuan-c2c/1-bat-dong-san/homestay.htm">- Homestay (0)</a>
+</li>
+<li>
+<a href="dong-thuan-c2c/1-bat-dong-san/biet-thu-can-ho.htm">- Biệt thự, căn hộ (0)</a>
+</li>
+<li>
+<a href="dong-thuan-c2c/1-bat-dong-san/mat-bang.htm">- Mặt bằng (0)</a>
+</li>
+<li>
+<a href="dong-thuan-c2c/1-bat-dong-san/khach-san.htm">- Khách sạn (0)</a>
+</li>
+<li>
+<a href="dong-thuan-c2c/1-bat-dong-san/van-phong.htm">- Văn phòng (0)</a>
+</li>
+<li>
+<a href="dong-thuan-c2c/1-bat-dong-san/hoi-truong-phong-hop.htm">- Hội trường, phòng họp (0)</a>
+</li>
+</ul>
+</li>
+<li>
+<a href="dong-thuan-c2c/2-xe-co.htm">2. Xe cộ (0)</a>
+<i class="arrown_menu_accordion" val="sub_ac_33_54"></i>
+<ul class="ul_ma_3" id="sub_ac_33_54" style="display:none;">
+<li>
+<a href="dong-thuan-c2c/2-xe-co/o-to.htm">- Ô tô (0)</a>
+</li>
+<li>
+<a href="dong-thuan-c2c/2-xe-co/xe-may.htm">- Xe máy (0)</a>
+</li>
+<li>
+<a href="dong-thuan-c2c/2-xe-co/xe-dap.htm">- Xe đạp (0)</a>
+</li>
+<li>
+<a href="dong-thuan-c2c/2-xe-co/phu-tung.htm">- Phụ tùng (0)</a>
+</li>
+ <li>
+<a href="dong-thuan-c2c/2-xe-co/do-nghe.htm">- Đồ nghề (0)</a>
+</li>
+</ul>
+</li>
+<li>
+<a href="dong-thuan-c2c/3-do-dien-tu.htm">3. Đồ điện tử (0)</a>
+<i class="arrown_menu_accordion" val="sub_ac_33_47"></i>
+<ul class="ul_ma_3" id="sub_ac_33_47" style="display:none;">
+<li>
+<a href="dong-thuan-c2c/3-do-dien-tu/dien-thoai.htm">- Điện thoại (0)</a>
+</li>
+<li>
+<a href="dong-thuan-c2c/3-do-dien-tu/may-tinh.htm">- Máy tính (0)</a>
+</li>
+<li>
+<a href="dong-thuan-c2c/3-do-dien-tu/phu-kien-di-kem.htm">- Phụ kiện đi kèm (0)</a>
+</li>
+</ul>
+</li>
+<li>
+<a href="dong-thuan-c2c/4-duoc-pham-an-uong.htm">4. Dược phẩm, ăn uống (0)</a>
+<i class="arrown_menu_accordion" val="sub_ac_33_51"></i>
+<ul class="ul_ma_3" id="sub_ac_33_51" style="display:none;">
+<li>
+<a href="dong-thuan-c2c/4-duoc-pham-an-uong/an-uong-thuong-ngay.htm">- Ăn uống thường ngày (0)</a>
+</li>
+<li>
+<a href="dong-thuan-c2c/4-duoc-pham-an-uong/dac-san-vung-mien-344.htm">- Đặc sản vùng miền (0)</a>
+</li>
+</ul>
+</li>
+<li>
+<a href="dong-thuan-c2c/5-the-thao.htm">5. Thể thao (0)</a>
+</li>
+<li>
+<a href="dong-thuan-c2c/6-me-va-be.htm">6. Mẹ và bé (0)</a>
+<i class="arrown_menu_accordion" val="sub_ac_33_35"></i>
+<ul class="ul_ma_3" id="sub_ac_33_35" style="display:none;">
+<li>
+<a href="dong-thuan-c2c/6-me-va-be/do-choi-tre-nho.htm">- Đồ chơi trẻ nhỏ (0)</a>
+</li>
+<li>
+<a href="dong-thuan-c2c/6-me-va-be/do-dung-em-be-346.htm">- Đồ dùng em bé (0)</a>
+</li>
+</ul>
+</li>
+<li>
+<a href="dong-thuan-c2c/7-dich-vu-do-du-lich.htm">7. Dịch vụ, đồ du lịch (0)</a>
+<i class="arrown_menu_accordion" val="sub_ac_33_50"></i>
+<ul class="ul_ma_3" id="sub_ac_33_50" style="display:none;">
+<li>
+<a href="dong-thuan-c2c/7-dich-vu-do-du-lich/do-dung-du-lich.htm">- Đồ dùng du lịch (0)</a>
+</li>
+<li>
+<a href="dong-thuan-c2c/7-dich-vu-do-du-lich/quan-xa-348.htm">- Quán xá (0)</a>
+</li>
+<li>
+<a href="dong-thuan-c2c/7-dich-vu-do-du-lich/luu-tru-349.htm">- Lưu trú (0)</a>
+</li>
+<li>
+<a href="dong-thuan-c2c/7-dich-vu-do-du-lich/book-tour-350.htm">- Book Tour (0)</a>
+</li>
+<li>
+<a href="dong-thuan-c2c/7-dich-vu-do-du-lich/spa-giai-tri-khac-351.htm">- Spa & giải trí khác (0)</a>
+</li>
+</ul>
+</li>
+<li>
+<a href="dong-thuan-c2c/8-suc-khoe.htm">8. Sức khỏe (0)</a>
+<i class="arrown_menu_accordion" val="sub_ac_33_55"></i>
+<ul class="ul_ma_3" id="sub_ac_33_55" style="display:none;">
+<li>
+<a href="dong-thuan-c2c/8-suc-khoe/thiet-bi-tro-giup-352.htm">- Thiết bị trợ giúp (0)</a>
+</li>
+<li>
+<a href="dong-thuan-c2c/8-suc-khoe/lieu-phap-dac-tri-353.htm">- Liệu pháp đặc trị (0)</a>
+</li>
+</ul>
+</li>
+<li>
+<a href="dong-thuan-c2c/9-lam-dep.htm">9. Làm đẹp (0)</a>
+<i class="arrown_menu_accordion" val="sub_ac_33_34"></i>
+<ul class="ul_ma_3" id="sub_ac_33_34" style="display:none;">
+<li>
+<a href="dong-thuan-c2c/9-lam-dep/my-pham.htm">- Mỹ Phẩm (0)</a>
+</li>
+<li>
+<a href="dong-thuan-c2c/9-lam-dep/thiet-bi-lam-dep-354.htm">- Thiết bị làm đẹp (0)</a>
+</li>
+</ul>
+</li>
+<li>
+<a href="dong-thuan-c2c/10-gia-dung-noi-that.htm">10. Gia dụng, nội thất (0)</a>
+<i class="arrown_menu_accordion" val="sub_ac_33_43"></i>
+<ul class="ul_ma_3" id="sub_ac_33_43" style="display:none;">
+<li>
+<a href="dong-thuan-c2c/10-gia-dung-noi-that/do-phong-khach.htm">- Đồ Phòng khách (0)</a>
+</li>
+<li>
+<a href="dong-thuan-c2c/10-gia-dung-noi-that/do-phong-bep.htm">- Đồ Phòng bếp (0)</a>
+</li>
+<li>
+<a href="dong-thuan-c2c/10-gia-dung-noi-that/do-phong-ngu.htm">- Đồ Phòng ngủ (0)</a>
+</li>
+<li>
+<a href="dong-thuan-c2c/10-gia-dung-noi-that/do-phong-lam-viec.htm">- Đồ Phòng làm việc (0)</a>
+</li>
+<li>
+<a href="dong-thuan-c2c/10-gia-dung-noi-that/do-phong-tam.htm">- Đồ Phòng tắm (0)</a>
+</li>
+ <li>
+<a href="dong-thuan-c2c/10-gia-dung-noi-that/do-san-vuon-ban-cong.htm">- Đồ sân vườn, ban công (0)</a>
+</li>
+</ul>
+</li>
+<li>
+<a href="dong-thuan-c2c/11-nha-thong-minh.htm">11. Nhà thông minh (0)</a>
+</li>
+<li>
+<a href="dong-thuan-c2c/12-do-ca-nhan.htm">12. Đồ cá nhân (0)</a>
+<i class="arrown_menu_accordion" val="sub_ac_33_256"></i>
+<ul class="ul_ma_3" id="sub_ac_33_256" style="display:none;">
+<li>
+<a href="dong-thuan-c2c/12-do-ca-nhan/do-dung-cho-nam.htm">- Đồ dùng cho Nam (0)</a>
+</li>
+<li>
+<a href="dong-thuan-c2c/12-do-ca-nhan/do-dung-cho-nu.htm">- Đồ dùng cho Nữ (0)</a>
+</li>
+</ul>
+</li>
+<li>
+<a href="dong-thuan-c2c/13-van-phong-pham.htm">13. Văn phòng phẩm (0)</a>
+<i class="arrown_menu_accordion" val="sub_ac_33_52"></i>
+<ul class="ul_ma_3" id="sub_ac_33_52" style="display:none;">
+<li>
+<a href="dong-thuan-c2c/13-van-phong-pham/but-viet.htm">- Bút viết (0)</a>
+</li>
+<li>
+<a href="dong-thuan-c2c/13-van-phong-pham/camera-nghiep-vu-363.htm">- Camera nghiệp vụ (0)</a>
+</li>
+<li>
+<a href="dong-thuan-c2c/13-van-phong-pham/balo-dung-laptop.htm">- Balo đựng Laptop (0)</a>
+</li>
+<li>
+<a href="dong-thuan-c2c/13-van-phong-pham/lich-tet-bao-li-xi.htm">- Lịch tết, bao lì xì (0)</a>
+</li>
+<li>
+<a href="dong-thuan-c2c/13-van-phong-pham/van-phong-pham-khac.htm">- Văn phòng phẩm khác (0)</a>
+</li>
+</ul>
+</li>
+<li>
+<a href="dong-thuan-c2c/14-xay-dung.htm">14. Xây dựng (0)</a>
+<i class="arrown_menu_accordion" val="sub_ac_33_59"></i>
+<ul class="ul_ma_3" id="sub_ac_33_59" style="display:none;">
+<li>
+<a href="dong-thuan-c2c/14-xay-dung/thiet-bi-dan-dung.htm">- Thiết bị Dân dụng (0)</a>
+</li>
+<li>
+<a href="dong-thuan-c2c/14-xay-dung/thiet-bi-cau-duong.htm">- Thiết bị Cầu đường (0)</a>
+</li>
+<li>
+<a href="dong-thuan-c2c/14-xay-dung/vat-lieu-cong-nghe-moi-369.htm">- Vật liệu, công nghệ mới (0)</a>
+</li>
+</ul>
+ </li>
+<li>
+<a href="dong-thuan-c2c/15-thoi-trang.htm">15. Thời trang (0)</a>
+<i class="arrown_menu_accordion" val="sub_ac_33_57"></i>
+<ul class="ul_ma_3" id="sub_ac_33_57" style="display:none;">
+<li>
+<a href="dong-thuan-c2c/15-thoi-trang/quan-ao-nam-370.htm">- Quần áo Nam (0)</a>
+</li>
+<li>
+<a href="dong-thuan-c2c/15-thoi-trang/quan-ao-nu-371.htm">- Quần áo Nữ (0)</a>
+</li>
+<li>
+<a href="dong-thuan-c2c/15-thoi-trang/dong-ho-372.htm">- Đồng hồ (0)</a>
+</li>
+<li>
+<a href="dong-thuan-c2c/15-thoi-trang/mat-kinh-373.htm">- Mắt kính (0)</a>
+</li>
+<li>
+<a href="dong-thuan-c2c/15-thoi-trang/giay-dep-nam-374.htm">- Giày dép Nam (0)</a>
+</li>
+<li>
+<a href="dong-thuan-c2c/15-thoi-trang/giay-dep-nu-375.htm">- Giày dép Nữ (0)</a>
+</li>
+<li>
+<a href="dong-thuan-c2c/15-thoi-trang/trang-suc-376.htm">- Trang sức (0)</a>
+</li>
+<li>
+<a href="dong-thuan-c2c/15-thoi-trang/tui-xach-377.htm">- Túi xách (0)</a>
+</li>
+<li>
+<a href="dong-thuan-c2c/15-thoi-trang/that-lung-378.htm">- Thắt lưng (0)</a>
+</li>
+<li>
+<a href="dong-thuan-c2c/15-thoi-trang/mu-non-379.htm">- Mũ nón (0)</a>
+</li>
+</ul>
+</li>
+<li>
+<a href="dong-thuan-c2c/16-lam-vuon.htm">16. Làm vườn (0)</a>
+<i class="arrown_menu_accordion" val="sub_ac_33_257"></i>
+<ul class="ul_ma_3" id="sub_ac_33_257" style="display:none;">
+<li>
+<a href="dong-thuan-c2c/16-lam-vuon/hat-giong-380.htm">- Hạt giống (0)</a>
+</li>
+<li>
+<a href="dong-thuan-c2c/16-lam-vuon/thiet-bi-do-nghe-381.htm">- Thiết bị, đồ nghề (0)</a>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<a href="lien-he.htm">_LIEN_HE_</a>
+</li>
+</ul>
+</div>
+</div>
+<script>
+	$(document).ready(function(e) {
+        $(".arrown_menu_accordion").click(function() {
+        	var val=$(this).attr("val");
+			$("#"+val).toggle();
+    	});
+    });
+</script> <link rel="stylesheet" type="text/css" href="scripts/fancyBox/source/jquery.fancybox.css">
+<script src="scripts/fancyBox/source/jquery.fancybox.pack.js"></script>
+<script src="scripts/frame_script.js"></script>
+<script>
+		$(document).ready(function(e) {
+            $(window).scroll(function () {
+				if( $(this).scrollTop() > 130) {
+					$('#header').addClass('header_fixed');
+				}else if ( $(this).scrollTop() <= 130 ) {
+					$('#header').removeClass('header_fixed');
+				}
+			});	
+        });
+	</script>
+<div id="fb-root"></div>
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v11.0"></script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-QTDCZPE21Z"></script><script>  window.dataLayer = window.dataLayer || [];  function gtag(){dataLayer.push(arguments);}  gtag('js', new Date());  gtag('config', 'G-QTDCZPE21Z');</script><script type="text/javascript">var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();(function(){var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];s1.async=true;s1.src='https://embed.tawk.to/612dc35ad6e7610a49b2d3a1/1fedc675a';s1.charset='UTF-8';s1.setAttribute('crossorigin','*');s0.parentNode.insertBefore(s1,s0);})();</script><script defer src="https://static.cloudflareinsights.com/beacon.min.js/v652eace1692a40cfa3763df669d7439c1639079717194" integrity="sha512-Gi7xpJR8tSkrpF7aordPZQlW2DLtzUlZcumS8dMQjwDHEnw9I7ZLyiOj/6tZStRBGtGgN6ceN6cMH8z7etPGlw==" data-cf-beacon='{"rayId":"73a8771adf9c3dd7","token":"530d898e91164f258afd342e774e834c","version":"2022.6.0","si":100}' crossorigin="anonymous"></script>
+</body>
+</html>
