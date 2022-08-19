@@ -6,4 +6,4 @@
 *.dll
 /packages
 /SanpiNetwork/bin
-/SanpiNetwork/obj/Debug
+/SanpiNetwork/obj

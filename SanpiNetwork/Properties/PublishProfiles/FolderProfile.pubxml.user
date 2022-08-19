@@ -1,0 +1,493 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+This file is used by the publish/package process of your Web project. You can customize the behavior of this process
+by editing this MSBuild file. In order to learn more about this please visit https://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <_PublishTargetUrl>D:\Deployments\SanPi</_PublishTargetUrl>
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="assets/css/c2c.css">
+      <publishTime>08/19/2022 14:10:35</publishTime>
+    </File>
+    <File Include="assets/css/c2c.css.map">
+      <publishTime>08/19/2022 14:10:35</publishTime>
+    </File>
+    <File Include="assets/css/dashboard.css">
+      <publishTime>08/19/2022 14:10:35</publishTime>
+    </File>
+    <File Include="assets/css/dashboard.css.map">
+      <publishTime>08/19/2022 14:10:35</publishTime>
+    </File>
+    <File Include="assets/css/home.css">
+      <publishTime>08/19/2022 14:10:35</publishTime>
+    </File>
+    <File Include="assets/css/home.css.map">
+      <publishTime>08/19/2022 14:10:35</publishTime>
+    </File>
+    <File Include="assets/css/vendor.css">
+      <publishTime>08/19/2022 14:10:35</publishTime>
+    </File>
+    <File Include="assets/css/vendor.css.map">
+      <publishTime>08/19/2022 14:10:35</publishTime>
+    </File>
+    <File Include="assets/imgs/arrow-down.png">
+      <publishTime>08/19/2022 14:10:35</publishTime>
+    </File>
+    <File Include="assets/imgs/arrow-up.png">
+      <publishTime>08/19/2022 14:10:35</publishTime>
+    </File>
+    <File Include="assets/imgs/arrown_menu_accordion.png">
+      <publishTime>08/19/2022 14:10:35</publishTime>
+    </File>
+    <File Include="assets/imgs/avatar.png">
+      <publishTime>08/19/2022 14:10:35</publishTime>
+    </File>
+    <File Include="assets/imgs/back-to-top.html">
+      <publishTime>08/19/2022 14:38:14</publishTime>
+    </File>
+    <File Include="assets/imgs/background-home.jpg">
+      <publishTime>08/19/2022 14:10:35</publishTime>
+    </File>
+    <File Include="assets/imgs/bg_btn_dk_mbcd.png">
+      <publishTime>08/19/2022 14:10:35</publishTime>
+    </File>
+    <File Include="assets/imgs/bg_ct.png">
+      <publishTime>08/19/2022 14:10:35</publishTime>
+    </File>
+    <File Include="assets/imgs/bg_ct_b.png">
+      <publishTime>08/19/2022 14:10:35</publishTime>
+    </File>
+    <File Include="assets/imgs/bg_ct_t.png">
+      <publishTime>08/19/2022 14:10:35</publishTime>
+    </File>
+    <File Include="assets/imgs/bg_dn_dk.png">
+      <publishTime>08/19/2022 14:10:35</publishTime>
+    </File>
+    <File Include="assets/imgs/bg_header.png">
+      <publishTime>08/19/2022 14:10:35</publishTime>
+    </File>
+    <File Include="assets/imgs/bg_t_page.png">
+      <publishTime>08/19/2022 14:10:35</publishTime>
+    </File>
+    <File Include="assets/imgs/bg_t_r2.png">
+      <publishTime>08/19/2022 14:10:35</publishTime>
+    </File>
+    <File Include="assets/imgs/bg_t_tabs.png">
+      <publishTime>08/19/2022 14:10:35</publishTime>
+    </File>
+    <File Include="assets/imgs/c2c.png">
+      <publishTime>08/19/2022 14:10:35</publishTime>
+    </File>
+    <File Include="assets/imgs/copy.png">
+      <publishTime>08/19/2022 14:10:35</publishTime>
+    </File>
+    <File Include="assets/imgs/icon-m-f2-ct.png">
+      <publishTime>08/19/2022 14:10:35</publishTime>
+    </File>
+    <File Include="assets/imgs/icontag.png">
+      <publishTime>08/19/2022 14:10:35</publishTime>
+    </File>
+    <File Include="assets/imgs/icon_1.png">
+      <publishTime>08/19/2022 14:10:35</publishTime>
+    </File>
+    <File Include="assets/imgs/icon_10.png">
+      <publishTime>08/19/2022 14:10:35</publishTime>
+    </File>
+    <File Include="assets/imgs/icon_11.png">
+      <publishTime>08/19/2022 14:10:35</publishTime>
+    </File>
+    <File Include="assets/imgs/icon_12.png">
+      <publishTime>08/19/2022 14:10:35</publishTime>
+    </File>
+    <File Include="assets/imgs/icon_13.png">
+      <publishTime>08/19/2022 14:10:35</publishTime>
+    </File>
+    <File Include="assets/imgs/icon_14.png">
+      <publishTime>08/19/2022 14:10:35</publishTime>
+    </File>
+    <File Include="assets/imgs/icon_15.png">
+      <publishTime>08/19/2022 14:10:35</publishTime>
+    </File>
+    <File Include="assets/imgs/icon_16.png">
+      <publishTime>08/19/2022 14:10:35</publishTime>
+    </File>
+    <File Include="assets/imgs/icon_17.png">
+      <publishTime>08/19/2022 14:10:35</publishTime>
+    </File>
+    <File Include="assets/imgs/icon_18.png">
+      <publishTime>08/19/2022 14:10:35</publishTime>
+    </File>
+    <File Include="assets/imgs/icon_19.png">
+      <publishTime>08/19/2022 14:10:35</publishTime>
+    </File>
+    <File Include="assets/imgs/icon_1_0.png">
+      <publishTime>08/19/2022 14:10:35</publishTime>
+    </File>
+    <File Include="assets/imgs/icon_2.png">
+      <publishTime>08/19/2022 14:10:35</publishTime>
+    </File>
+    <File Include="assets/imgs/icon_20.png">
+      <publishTime>08/19/2022 14:10:35</publishTime>
+    </File>
+    <File Include="assets/imgs/icon_21.png">
+      <publishTime>08/19/2022 14:10:35</publishTime>
+    </File>
+    <File Include="assets/imgs/icon_2_0.png">
+      <publishTime>08/19/2022 14:10:35</publishTime>
+    </File>
+    <File Include="assets/imgs/icon_5.png">
+      <publishTime>08/19/2022 14:10:35</publishTime>
+    </File>
+    <File Include="assets/imgs/icon_6.png">
+      <publishTime>08/19/2022 14:10:35</publishTime>
+    </File>
+    <File Include="assets/imgs/icon_7.png">
+      <publishTime>08/19/2022 14:10:35</publishTime>
+    </File>
+    <File Include="assets/imgs/icon_8.png">
+      <publishTime>08/19/2022 14:10:35</publishTime>
+    </File>
+    <File Include="assets/imgs/icon_9.png">
+      <publishTime>08/19/2022 14:10:35</publishTime>
+    </File>
+    <File Include="assets/imgs/icon_lang_1.png">
+      <publishTime>08/19/2022 14:10:35</publishTime>
+    </File>
+    <File Include="assets/imgs/icon_lang_2.png">
+      <publishTime>08/19/2022 14:10:35</publishTime>
+    </File>
+    <File Include="assets/imgs/icon_lang_3.png">
+      <publishTime>08/19/2022 14:10:35</publishTime>
+    </File>
+    <File Include="assets/imgs/lang_1.png">
+      <publishTime>08/19/2022 14:10:35</publishTime>
+    </File>
+    <File Include="assets/imgs/lang_2.png">
+      <publishTime>08/19/2022 14:10:35</publishTime>
+    </File>
+    <File Include="assets/imgs/lang_3.png">
+      <publishTime>08/19/2022 14:10:35</publishTime>
+    </File>
+    <File Include="assets/imgs/line.png">
+      <publishTime>08/19/2022 14:10:35</publishTime>
+    </File>
+    <File Include="assets/imgs/logo-pi.png">
+      <publishTime>08/19/2022 14:10:35</publishTime>
+    </File>
+    <File Include="assets/imgs/logo-png.png">
+      <publishTime>08/19/2022 14:10:35</publishTime>
+    </File>
+    <File Include="assets/imgs/logo.jpg">
+      <publishTime>08/19/2022 14:10:35</publishTime>
+    </File>
+    <File Include="assets/imgs/logo.png">
+      <publishTime>08/19/2022 14:10:35</publishTime>
+    </File>
+    <File Include="assets/imgs/menu_mobile.png">
+      <publishTime>08/19/2022 14:10:35</publishTime>
+    </File>
+    <File Include="assets/imgs/my-wallet.jpg">
+      <publishTime>08/19/2022 14:10:35</publishTime>
+    </File>
+    <File Include="assets/imgs/pi-trading.jpg">
+      <publishTime>08/19/2022 14:10:35</publishTime>
+    </File>
+    <File Include="assets/imgs/tele.png">
+      <publishTime>08/19/2022 14:10:35</publishTime>
+    </File>
+    <File Include="assets/imgs/web-small.svg">
+      <publishTime>08/19/2022 14:10:35</publishTime>
+    </File>
+    <File Include="assets/js/flot/jquery.flot.categories.js">
+      <publishTime>08/19/2022 14:10:35</publishTime>
+    </File>
+    <File Include="assets/js/flot/jquery.flot.js">
+      <publishTime>08/19/2022 14:10:35</publishTime>
+    </File>
+    <File Include="assets/js/flot/jquery.flot.pie.js">
+      <publishTime>08/19/2022 14:10:35</publishTime>
+    </File>
+    <File Include="assets/js/flot/jquery.flot.resize.js">
+      <publishTime>08/19/2022 14:10:35</publishTime>
+    </File>
+    <File Include="assets/js/home.js">
+      <publishTime>08/19/2022 14:10:35</publishTime>
+    </File>
+    <File Include="bin/Antlr3.Runtime.dll">
+      <publishTime>09/10/2013 16:29:20</publishTime>
+    </File>
+    <File Include="bin/Antlr3.Runtime.pdb">
+      <publishTime>09/10/2013 16:29:20</publishTime>
+    </File>
+    <File Include="bin/AspNet.ScriptManager.bootstrap.dll">
+      <publishTime>09/06/2016 10:55:00</publishTime>
+    </File>
+    <File Include="bin/AspNet.ScriptManager.jQuery.dll">
+      <publishTime>01/25/2018 10:42:28</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AspNet.FriendlyUrls.dll">
+      <publishTime>07/30/2013 16:57:30</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AspNet.Web.Optimization.WebForms.dll">
+      <publishTime>02/11/2014 15:26:04</publishTime>
+    </File>
+    <File Include="bin/Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll">
+      <publishTime>05/24/2018 13:38:22</publishTime>
+    </File>
+    <File Include="bin/Microsoft.ScriptManager.MSAjax.dll">
+      <publishTime>09/06/2013 11:20:12</publishTime>
+    </File>
+    <File Include="bin/Microsoft.ScriptManager.WebForms.dll">
+      <publishTime>09/06/2013 11:20:22</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Web.Infrastructure.dll">
+      <publishTime>07/25/2012 11:48:56</publishTime>
+    </File>
+    <File Include="bin/Newtonsoft.Json.dll">
+      <publishTime>02/18/2018 09:44:54</publishTime>
+    </File>
+    <File Include="bin/roslyn/csc.exe">
+      <publishTime>05/24/2018 13:38:22</publishTime>
+    </File>
+    <File Include="bin/roslyn/csc.exe.config">
+      <publishTime>05/24/2018 13:38:22</publishTime>
+    </File>
+    <File Include="bin/roslyn/csc.rsp">
+      <publishTime>05/24/2018 13:38:22</publishTime>
+    </File>
+    <File Include="bin/roslyn/csi.exe">
+      <publishTime>05/24/2018 13:38:22</publishTime>
+    </File>
+    <File Include="bin/roslyn/csi.exe.config">
+      <publishTime>05/24/2018 13:38:22</publishTime>
+    </File>
+    <File Include="bin/roslyn/csi.rsp">
+      <publishTime>05/24/2018 13:38:22</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.Build.Tasks.CodeAnalysis.dll">
+      <publishTime>05/24/2018 13:38:22</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.CSharp.dll">
+      <publishTime>05/24/2018 13:38:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.CSharp.Scripting.dll">
+      <publishTime>05/24/2018 13:38:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.dll">
+      <publishTime>05/24/2018 13:38:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.Scripting.dll">
+      <publishTime>05/24/2018 13:38:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.VisualBasic.dll">
+      <publishTime>05/24/2018 13:38:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CSharp.Core.targets">
+      <publishTime>05/24/2018 13:38:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.DiaSymReader.Native.amd64.dll">
+      <publishTime>05/24/2018 13:38:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.DiaSymReader.Native.x86.dll">
+      <publishTime>05/24/2018 13:38:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.Managed.Core.targets">
+      <publishTime>05/24/2018 13:38:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.VisualBasic.Core.targets">
+      <publishTime>05/24/2018 13:38:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.AppContext.dll">
+      <publishTime>05/24/2018 13:38:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Collections.Immutable.dll">
+      <publishTime>05/24/2018 13:38:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Console.dll">
+      <publishTime>05/24/2018 13:38:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Diagnostics.FileVersionInfo.dll">
+      <publishTime>05/24/2018 13:38:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Diagnostics.StackTrace.dll">
+      <publishTime>05/24/2018 13:38:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.IO.Compression.dll">
+      <publishTime>05/24/2018 13:38:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.IO.FileSystem.dll">
+      <publishTime>05/24/2018 13:38:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.IO.FileSystem.Primitives.dll">
+      <publishTime>05/24/2018 13:38:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.IO.Pipes.AccessControl.dll">
+      <publishTime>05/24/2018 13:38:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.IO.Pipes.dll">
+      <publishTime>05/24/2018 13:38:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Reflection.Metadata.dll">
+      <publishTime>05/24/2018 13:38:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Security.AccessControl.dll">
+      <publishTime>05/24/2018 13:38:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Security.Claims.dll">
+      <publishTime>05/24/2018 13:38:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Security.Cryptography.Algorithms.dll">
+      <publishTime>05/24/2018 13:38:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Security.Cryptography.Encoding.dll">
+      <publishTime>05/24/2018 13:38:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Security.Cryptography.Primitives.dll">
+      <publishTime>05/24/2018 13:38:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Security.Cryptography.X509Certificates.dll">
+      <publishTime>05/24/2018 13:38:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Security.Principal.Windows.dll">
+      <publishTime>05/24/2018 13:38:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Text.Encoding.CodePages.dll">
+      <publishTime>05/24/2018 13:38:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.ValueTuple.dll">
+      <publishTime>05/24/2018 13:38:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Xml.ReaderWriter.dll">
+      <publishTime>05/24/2018 13:38:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Xml.XmlDocument.dll">
+      <publishTime>05/24/2018 13:38:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Xml.XPath.dll">
+      <publishTime>05/24/2018 13:38:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Xml.XPath.XDocument.dll">
+      <publishTime>05/24/2018 13:38:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/vbc.exe">
+      <publishTime>05/24/2018 13:38:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/vbc.exe.config">
+      <publishTime>05/24/2018 13:38:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/vbc.rsp">
+      <publishTime>05/24/2018 13:38:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/VBCSCompiler.exe">
+      <publishTime>05/24/2018 13:38:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/VBCSCompiler.exe.config">
+      <publishTime>05/24/2018 13:38:24</publishTime>
+    </File>
+    <File Include="bin/SanpiNetwork.dll">
+      <publishTime>08/19/2022 16:26:36</publishTime>
+    </File>
+    <File Include="bin/SanpiNetwork.pdb">
+      <publishTime>08/19/2022 16:26:36</publishTime>
+    </File>
+    <File Include="bin/SubSonic.dll">
+      <publishTime>11/14/2015 08:39:00</publishTime>
+    </File>
+    <File Include="bin/System.Net.Http.Formatting.dll">
+      <publishTime>02/01/2018 12:17:18</publishTime>
+    </File>
+    <File Include="bin/System.Web.Http.dll">
+      <publishTime>02/01/2018 12:17:40</publishTime>
+    </File>
+    <File Include="bin/System.Web.Http.WebHost.dll">
+      <publishTime>02/01/2018 12:19:26</publishTime>
+    </File>
+    <File Include="bin/System.Web.Optimization.dll">
+      <publishTime>02/11/2014 15:26:04</publishTime>
+    </File>
+    <File Include="bin/WebGrease.dll">
+      <publishTime>01/23/2014 13:57:34</publishTime>
+    </File>
+    <File Include="Bundle.config">
+      <publishTime>08/19/2022 13:16:31</publishTime>
+    </File>
+    <File Include="c2c.html">
+      <publishTime>08/19/2022 14:38:14</publishTime>
+    </File>
+    <File Include="dang-ky.html">
+      <publishTime>08/19/2022 14:38:31</publishTime>
+    </File>
+    <File Include="dashboard.html">
+      <publishTime>08/19/2022 14:38:14</publishTime>
+    </File>
+    <File Include="favicon.ico">
+      <publishTime>08/19/2022 13:16:31</publishTime>
+    </File>
+    <File Include="Global.asax">
+      <publishTime>08/19/2022 13:16:31</publishTime>
+    </File>
+    <File Include="index.html">
+      <publishTime>08/19/2022 14:38:14</publishTime>
+    </File>
+    <File Include="login.html">
+      <publishTime>08/19/2022 14:38:16</publishTime>
+    </File>
+    <File Include="pi-trading.html">
+      <publishTime>08/19/2022 14:38:14</publishTime>
+    </File>
+    <File Include="quen-pass.html">
+      <publishTime>08/19/2022 14:38:14</publishTime>
+    </File>
+    <File Include="scripts/frame_script.js">
+      <publishTime>08/19/2022 15:17:07</publishTime>
+    </File>
+    <File Include="scripts/frame_script.min.js">
+      <publishTime>08/19/2022 14:10:35</publishTime>
+    </File>
+    <File Include="scripts/jquery-ui.js">
+      <publishTime>08/19/2022 14:10:35</publishTime>
+    </File>
+    <File Include="scripts/jquery.js">
+      <publishTime>08/19/2022 14:10:35</publishTime>
+    </File>
+    <File Include="tra-cuu-giao-dich.html">
+      <publishTime>08/19/2022 15:16:42</publishTime>
+    </File>
+    <File Include="uploads/danhmuc/sanpi-11-png-20210330144746szVS2kNYZ7.png">
+      <publishTime>08/19/2022 14:10:35</publishTime>
+    </File>
+    <File Include="uploads/danhmuc/sanpinetwork-dong-thuan-c2c-jpg-20220529093040QhmzXGXRwr.jpg">
+      <publishTime>08/19/2022 14:10:35</publishTime>
+    </File>
+    <File Include="uploads/danhmuc/sanpinetwork-nguon-hang-2-png-202205290935581r3Cemjnt9.png">
+      <publishTime>08/19/2022 14:10:35</publishTime>
+    </File>
+    <File Include="uploads/quangcao/br017-jpg-20211004214432EP4Uy7iCPt.jpg">
+      <publishTime>08/19/2022 14:10:35</publishTime>
+    </File>
+    <File Include="uploads/quangcao/logo-sanpi-png-20220422222718IxAdeiHXMs.png">
+      <publishTime>08/19/2022 14:10:35</publishTime>
+    </File>
+    <File Include="uploads/quangcao/logo-sanpi-png-20220422223004Q5Q29DCh5Z.png">
+      <publishTime>08/19/2022 14:10:35</publishTime>
+    </File>
+    <File Include="uploads/quangcao/mb-bank-giua-5-png-20211003103109WT6bz5dNf9.png">
+      <publishTime>08/19/2022 14:10:35</publishTime>
+    </File>
+    <File Include="uploads/quangcao/san-pi-hong-kong-3-jpg-20211004185555GQYX1zToiq.jpg">
+      <publishTime>08/19/2022 14:10:35</publishTime>
+    </File>
+    <File Include="uploads/version/01-11-2021-sanpi-commodity-png-20211106190158MBItLvKteL.png">
+      <publishTime>08/19/2022 14:10:35</publishTime>
+    </File>
+    <File Include="uploads/version/vip2-ico-20220620201932HnEkuVvgE.ico">
+      <publishTime>08/19/2022 14:10:35</publishTime>
+    </File>
+    <File Include="Web.config">
+      <publishTime>08/19/2022 16:26:36</publishTime>
+    </File>
+  </ItemGroup>
+</Project>

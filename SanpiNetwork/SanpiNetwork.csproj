@@ -244,6 +244,7 @@
     <Content Include="assets\css\home.css.map" />
     <Content Include="assets\css\vendor.css.map" />
     <None Include="packages.config" />
+    <None Include="Properties\PublishProfiles\FolderProfile.pubxml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
