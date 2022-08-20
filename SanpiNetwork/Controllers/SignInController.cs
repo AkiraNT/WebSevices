@@ -58,7 +58,7 @@ namespace SanpiNetwork.Controllers
                         Message = "Đăng nhập thành công!",
                         Items= new
                         {
-                            account.Id,
+                            Token = SecurityHelpers.EnscryptAES(account.Id.ToString()),
                             account.FullName,
                             account.Email,
                             account.Phone,
@@ -83,7 +83,7 @@ namespace SanpiNetwork.Controllers
                 result = new
                 {
                     Status = -1,
-                    Message = "Lỗi!"
+                    Message = "Hệ thống đang bảo trì!"
                 };
             }
             outer:

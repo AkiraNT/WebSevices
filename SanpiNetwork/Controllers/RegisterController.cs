@@ -58,12 +58,12 @@ namespace SanpiNetwork.Controllers
                     account.Password = SecurityHelpers.GetMd5Hash(dic.Password.Value);
                     account.FullName = dic.FullName.Value;
                     account = AccountsManager.Insert(account);
-                    if(account == null)
+                    if (account == null)
                     {
                         result = new
                         {
                             Status = -1,
-                            Message = "Lỗi dữ liệu!"
+                            Message = "Hệ thống đang bảo trì!"
                         };
                         goto outer;
                     }
@@ -73,7 +73,7 @@ namespace SanpiNetwork.Controllers
                         Message = "Đăng ký thành công!",
                         Items = new
                         {
-                            account.Id,
+                            Token = SecurityHelpers.EnscryptAES(account.Id.ToString()),
                             account.FullName,
                             account.Email,
                             account.Phone,
@@ -98,7 +98,7 @@ namespace SanpiNetwork.Controllers
                 result = new
                 {
                     Status = -1,
-                    Message = "Lỗi!"
+                    Message = "Hệ thống đang bảo trì!"
                 };
             }
         outer:

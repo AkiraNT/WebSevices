@@ -80,10 +80,12 @@ namespace SweetCMS.DataAccess
 	    /// Inserts a record, can be used with the Object Data Source
 	    /// </summary>
         [DataObjectMethod(DataObjectMethodType.Insert, true)]
-	    public void Insert(string Code,decimal Qty,decimal Rate,decimal Amount,string Type,string Status,DateTime DateX)
+	    public void Insert(int AccountId,string Code,decimal Qty,decimal Rate,decimal Amount,string Type,string Status,DateTime DateX)
 	    {
 		    TblTransaction item = new TblTransaction();
 		    
+            item.AccountId = AccountId;
+            
             item.Code = Code;
             
             item.Qty = Qty;
@@ -106,13 +108,15 @@ namespace SweetCMS.DataAccess
 	    /// Updates a record, can be used with the Object Data Source
 	    /// </summary>
         [DataObjectMethod(DataObjectMethodType.Update, true)]
-	    public void Update(int Id,string Code,decimal Qty,decimal Rate,decimal Amount,string Type,string Status,DateTime DateX)
+	    public void Update(int Id,int AccountId,string Code,decimal Qty,decimal Rate,decimal Amount,string Type,string Status,DateTime DateX)
 	    {
 		    TblTransaction item = new TblTransaction();
 	        item.MarkOld();
 	        item.IsLoaded = true;
 		    
 			item.Id = Id;
+				
+			item.AccountId = AccountId;
 				
 			item.Code = Code;
 				

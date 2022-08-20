@@ -139,6 +139,20 @@ namespace SweetCMS.DataAccess
 				colvarId.ForeignKeyTableName = "";
 				schema.Columns.Add(colvarId);
 				
+				TableSchema.TableColumn colvarAccountId = new TableSchema.TableColumn(schema);
+				colvarAccountId.ColumnName = "AccountId";
+				colvarAccountId.DataType = DbType.Int32;
+				colvarAccountId.MaxLength = 0;
+				colvarAccountId.AutoIncrement = false;
+				colvarAccountId.IsNullable = false;
+				colvarAccountId.IsPrimaryKey = false;
+				colvarAccountId.IsForeignKey = false;
+				colvarAccountId.IsReadOnly = false;
+				
+						colvarAccountId.DefaultSetting = @"((0))";
+				colvarAccountId.ForeignKeyTableName = "";
+				schema.Columns.Add(colvarAccountId);
+				
 				TableSchema.TableColumn colvarCode = new TableSchema.TableColumn(schema);
 				colvarCode.ColumnName = "Code";
 				colvarCode.DataType = DbType.AnsiString;
@@ -255,6 +269,14 @@ namespace SweetCMS.DataAccess
 			set { SetColumnValue(Columns.Id, value); }
 		}
 		  
+		[XmlAttribute("AccountId")]
+		[Bindable(true)]
+		public int AccountId 
+		{
+			get { return GetColumnValue<int>(Columns.AccountId); }
+			set { SetColumnValue(Columns.AccountId, value); }
+		}
+		  
 		[XmlAttribute("Code")]
 		[Bindable(true)]
 		public string Code 
@@ -330,9 +352,11 @@ namespace SweetCMS.DataAccess
 		/// <summary>
 		/// Inserts a record, can be used with the Object Data Source
 		/// </summary>
-		public static void Insert(string varCode,decimal varQty,decimal varRate,decimal varAmount,string varType,string varStatus,DateTime varDateX)
+		public static void Insert(int varAccountId,string varCode,decimal varQty,decimal varRate,decimal varAmount,string varType,string varStatus,DateTime varDateX)
 		{
 			TblTransaction item = new TblTransaction();
+			
+			item.AccountId = varAccountId;
 			
 			item.Code = varCode;
 			
@@ -358,11 +382,13 @@ namespace SweetCMS.DataAccess
 		/// <summary>
 		/// Updates a record, can be used with the Object Data Source
 		/// </summary>
-		public static void Update(int varId,string varCode,decimal varQty,decimal varRate,decimal varAmount,string varType,string varStatus,DateTime varDateX)
+		public static void Update(int varId,int varAccountId,string varCode,decimal varQty,decimal varRate,decimal varAmount,string varType,string varStatus,DateTime varDateX)
 		{
 			TblTransaction item = new TblTransaction();
 			
 				item.Id = varId;
+			
+				item.AccountId = varAccountId;
 			
 				item.Code = varCode;
 			
@@ -398,51 +424,58 @@ namespace SweetCMS.DataAccess
         
         
         
-        public static TableSchema.TableColumn CodeColumn
+        public static TableSchema.TableColumn AccountIdColumn
         {
             get { return Schema.Columns[1]; }
         }
         
         
         
-        public static TableSchema.TableColumn QtyColumn
+        public static TableSchema.TableColumn CodeColumn
         {
             get { return Schema.Columns[2]; }
         }
         
         
         
-        public static TableSchema.TableColumn RateColumn
+        public static TableSchema.TableColumn QtyColumn
         {
             get { return Schema.Columns[3]; }
         }
         
         
         
-        public static TableSchema.TableColumn AmountColumn
+        public static TableSchema.TableColumn RateColumn
         {
             get { return Schema.Columns[4]; }
         }
         
         
         
-        public static TableSchema.TableColumn TypeColumn
+        public static TableSchema.TableColumn AmountColumn
         {
             get { return Schema.Columns[5]; }
         }
         
         
         
-        public static TableSchema.TableColumn StatusColumn
+        public static TableSchema.TableColumn TypeColumn
         {
             get { return Schema.Columns[6]; }
         }
         
         
         
-        public static TableSchema.TableColumn DateXColumn
+        public static TableSchema.TableColumn StatusColumn
         {
             get { return Schema.Columns[7]; }
+        }
+        
+        
+        
+        public static TableSchema.TableColumn DateXColumn
+        {
+            get { return Schema.Columns[8]; }
         }
         
         
@@ -452,6 +485,7 @@ namespace SweetCMS.DataAccess
 		public struct Columns
 		{
 			 public static string Id = @"Id";
+			 public static string AccountId = @"AccountId";
 			 public static string Code = @"Code";
 			 public static string Qty = @"Qty";
 			 public static string Rate = @"Rate";
