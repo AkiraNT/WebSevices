@@ -106,6 +106,7 @@ $(document).ready(function () {
                 }
                 localStorage.setItem("IsAuthentication", true);
                 localStorage.setItem("Profile", JSON.stringify(data.Items));
+                localStorage.setItem("Token", data.Items.Token);
                 window.location = "dashboard.html";
             },
             error: function (error) {
@@ -218,7 +219,8 @@ $(document).ready(function () {
             Qty: qty,
             Amount: rate * qty,
             Status: 'Pending',
-            Type: 'Buy'
+            Type: 'Buy',
+            Token: localStorage.getItem("Token")
         };
         $.ajax({
             type: "POST",
@@ -294,7 +296,8 @@ $(document).ready(function () {
             Qty: qty,
             Amount: rate * qty,
             Status: 'Pending',
-            Type: 'Sell'
+            Type: 'Sell',
+            Token: localStorage.getItem("Token")
         };
         $.ajax({
             type: "POST",

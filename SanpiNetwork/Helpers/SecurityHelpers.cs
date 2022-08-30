@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Security.Cryptography;
 using System.Text;
@@ -59,5 +60,66 @@ namespace SanpiNetwork.Helpers
                 return false;
             }
         }
+
+        private static string PublicKeyAES = "K3JDKESK";
+        private static string SecretKeyAES = "SK4F8SDS";
+        public static string EnscryptAES(string textToEncrypt)
+        {
+            try
+            {
+                string ToReturn = "";
+                byte[] secretkeyByte = { };
+                secretkeyByte = Encoding.UTF8.GetBytes(SecretKeyAES);
+                byte[] publickeybyte = { };
+                publickeybyte = Encoding.UTF8.GetBytes(PublicKeyAES);
+                MemoryStream ms = null;
+                CryptoStream cs = null;
+                byte[] inputbyteArray = Encoding.UTF8.GetBytes(textToEncrypt);
+                using (DESCryptoServiceProvider des = new DESCryptoServiceProvider())
+                {
+                    ms = new MemoryStream();
+                    cs = new CryptoStream(ms, des.CreateEncryptor(publickeybyte, secretkeyByte), CryptoStreamMode.Write);
+                    cs.Write(inputbyteArray, 0, inputbyteArray.Length);
+                    cs.FlushFinalBlock();
+                    ToReturn = Convert.ToBase64String(ms.ToArray());
+                }
+                return ToReturn;
+            }
+            catch
+            {
+                return string.Empty;
+            }
+        }
+
+        public static string DecryptAES(string textToDecrypt)
+        {
+            try
+            {
+                string ToReturn = "";
+                byte[] privatekeyByte = { };
+                privatekeyByte = Encoding.UTF8.GetBytes(SecretKeyAES);
+                byte[] publickeybyte = { };
+                publickeybyte = Encoding.UTF8.GetBytes(PublicKeyAES);
+                MemoryStream ms = null;
+                CryptoStream cs = null;
+                byte[] inputbyteArray = new byte[textToDecrypt.Replace(" ", "+").Length];
+                inputbyteArray = Convert.FromBase64String(textToDecrypt.Replace(" ", "+"));
+                using (DESCryptoServiceProvider des = new DESCryptoServiceProvider())
+                {
+                    ms = new MemoryStream();
+                    cs = new CryptoStream(ms, des.CreateDecryptor(publickeybyte, privatekeyByte), CryptoStreamMode.Write);
+                    cs.Write(inputbyteArray, 0, inputbyteArray.Length);
+                    cs.FlushFinalBlock();
+                    Encoding encoding = Encoding.UTF8;
+                    ToReturn = encoding.GetString(ms.ToArray());
+                }
+                return ToReturn;
+            }
+            catch
+            {
+                return string.Empty;
+            }
+        }
+
     }
 }
