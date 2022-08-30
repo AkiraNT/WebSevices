@@ -15,13 +15,13 @@ using SubSonic.Utilities;
 namespace SweetCMS.DataAccess
 {
     /// <summary>
-    /// Controller class for TblTransactions
+    /// Controller class for TblPassphrase
     /// </summary>
     [System.ComponentModel.DataObject]
-    public partial class TblTransactionController
+    public partial class TblPassphraseController
     {
         // Preload our schema..
-        TblTransaction thisSchemaLoad = new TblTransaction();
+        TblPassphrase thisSchemaLoad = new TblPassphrase();
         private string userName = String.Empty;
         protected string UserName
         {
@@ -42,36 +42,36 @@ namespace SweetCMS.DataAccess
             }
         }
         [DataObjectMethod(DataObjectMethodType.Select, true)]
-        public TblTransactionCollection FetchAll()
+        public TblPassphraseCollection FetchAll()
         {
-            TblTransactionCollection coll = new TblTransactionCollection();
-            Query qry = new Query(TblTransaction.Schema);
+            TblPassphraseCollection coll = new TblPassphraseCollection();
+            Query qry = new Query(TblPassphrase.Schema);
             coll.LoadAndCloseReader(qry.ExecuteReader());
             return coll;
         }
         [DataObjectMethod(DataObjectMethodType.Select, false)]
-        public TblTransactionCollection FetchByID(object Id)
+        public TblPassphraseCollection FetchByID(object Id)
         {
-            TblTransactionCollection coll = new TblTransactionCollection().Where("Id", Id).Load();
+            TblPassphraseCollection coll = new TblPassphraseCollection().Where("Id", Id).Load();
             return coll;
         }
 		
 		[DataObjectMethod(DataObjectMethodType.Select, false)]
-        public TblTransactionCollection FetchByQuery(Query qry)
+        public TblPassphraseCollection FetchByQuery(Query qry)
         {
-            TblTransactionCollection coll = new TblTransactionCollection();
+            TblPassphraseCollection coll = new TblPassphraseCollection();
             coll.LoadAndCloseReader(qry.ExecuteReader()); 
             return coll;
         }
         [DataObjectMethod(DataObjectMethodType.Delete, true)]
         public bool Delete(object Id)
         {
-            return (TblTransaction.Delete(Id) == 1);
+            return (TblPassphrase.Delete(Id) == 1);
         }
         [DataObjectMethod(DataObjectMethodType.Delete, false)]
         public bool Destroy(object Id)
         {
-            return (TblTransaction.Destroy(Id) == 1);
+            return (TblPassphrase.Destroy(Id) == 1);
         }
         
         
@@ -80,25 +80,11 @@ namespace SweetCMS.DataAccess
 	    /// Inserts a record, can be used with the Object Data Source
 	    /// </summary>
         [DataObjectMethod(DataObjectMethodType.Insert, true)]
-	    public void Insert(int AccountId,string Code,decimal Qty,decimal Rate,decimal Amount,string Type,string Status,DateTime DateX)
+	    public void Insert(string Passphrase)
 	    {
-		    TblTransaction item = new TblTransaction();
+		    TblPassphrase item = new TblPassphrase();
 		    
-            item.AccountId = AccountId;
-            
-            item.Code = Code;
-            
-            item.Qty = Qty;
-            
-            item.Rate = Rate;
-            
-            item.Amount = Amount;
-            
-            item.Type = Type;
-            
-            item.Status = Status;
-            
-            item.DateX = DateX;
+            item.Passphrase = Passphrase;
             
 	    
 		    item.Save(UserName);
@@ -108,29 +94,15 @@ namespace SweetCMS.DataAccess
 	    /// Updates a record, can be used with the Object Data Source
 	    /// </summary>
         [DataObjectMethod(DataObjectMethodType.Update, true)]
-	    public void Update(int Id,int AccountId,string Code,decimal Qty,decimal Rate,decimal Amount,string Type,string Status,DateTime DateX)
+	    public void Update(int Id,string Passphrase)
 	    {
-		    TblTransaction item = new TblTransaction();
+		    TblPassphrase item = new TblPassphrase();
 	        item.MarkOld();
 	        item.IsLoaded = true;
 		    
 			item.Id = Id;
 				
-			item.AccountId = AccountId;
-				
-			item.Code = Code;
-				
-			item.Qty = Qty;
-				
-			item.Rate = Rate;
-				
-			item.Amount = Amount;
-				
-			item.Type = Type;
-				
-			item.Status = Status;
-				
-			item.DateX = DateX;
+			item.Passphrase = Passphrase;
 				
 	        item.Save(UserName);
 	    }

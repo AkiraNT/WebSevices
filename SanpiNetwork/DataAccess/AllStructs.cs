@@ -20,6 +20,8 @@ namespace SweetCMS.DataAccess
 		
 		public static readonly string TblAccount = @"TblAccounts";
         
+		public static readonly string TblPassphrase = @"TblPassphrase";
+        
 		public static readonly string TblTransaction = @"TblTransactions";
         
 	}
@@ -30,6 +32,11 @@ namespace SweetCMS.DataAccess
 		public static TableSchema.Table TblAccount
 		{
             get { return DataService.GetSchema("TblAccounts", "DataAcessProvider"); }
+		}
+        
+		public static TableSchema.Table TblPassphrase
+		{
+            get { return DataService.GetSchema("TblPassphrase", "DataAcessProvider"); }
 		}
         
 		public static TableSchema.Table TblTransaction
