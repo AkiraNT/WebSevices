@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Web.Http;
+using WebApiThrottle;
 
 namespace SanpiNetwork
 {
@@ -10,7 +11,21 @@ namespace SanpiNetwork
         public static void Register(HttpConfiguration config)
         {
             // Web API configuration and services
-
+            config.MessageHandlers.Add(new ThrottlingHandler()
+            {
+                Policy = new ThrottlePolicy(perSecond: 1, perMinute: 10)
+                {
+                    IpThrottling = true,
+                    ClientThrottling = true,
+                    EndpointThrottling = true,
+                    StackBlockedRequests = true,
+                    IpRules = new Dictionary<string, RateLimits>
+                    {
+                        { "14.162.255.89", new RateLimits { PerSecond = 0, PerMinute =0 } }
+                    }
+                },
+                Repository = new CacheRepository()
+            });
             // Web API routes
             config.MapHttpAttributeRoutes();
 
